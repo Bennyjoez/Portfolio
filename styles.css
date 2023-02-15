@@ -24,3 +24,9 @@
 .navbar ul .logo {
   padding: 10px 12px;
 }
+
+/* headline */
+.headline {
+  background: #1C1A19;
+  height: 100vh;
+}
