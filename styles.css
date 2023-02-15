@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bakbak+One&family=Crete+Round&family=Roboto:wght@700&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -32,4 +34,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.greeting {
+  color: #FF6B00;
+  font-family: 'Crete Round';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
 }
