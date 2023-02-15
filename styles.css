@@ -28,7 +28,15 @@ body {
   justify-content: space-between;
 }
 
-.navbar ul .logo {
+.navbar ul .menu {
+  cursor: pointer;
+}
+
+.navbar ul .menu:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar ul .nav-item {
   padding: 10px 12px;
 }
 
