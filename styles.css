@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+body {
+  min-width: 375px;
+}
+
 .navbar {
   background: #3C3A39;
   padding: 2px 24px;
