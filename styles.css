@@ -3,3 +3,24 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.navbar {
+  background: #3C3A39;
+  padding: 2px 24px;
+}
+
+.navbar ul {
+  list-style: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar ul .logo {
+  padding: 10px 12px;
+}
