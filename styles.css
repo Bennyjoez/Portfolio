@@ -8,6 +8,7 @@
 
 body {
   min-width: 375px;
+  overflow-x: hidden;
 }
 
 .navbar {
