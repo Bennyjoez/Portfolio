@@ -36,6 +36,7 @@
   justify-content: center;
   gap: 12px;
   padding-inline: 24px;
+  position: relative;
 }
 
 .greeting {
@@ -82,3 +83,11 @@
   align-items: center;
 }
 
+.blob {
+  height: 300px;
+  width: 400px;
+  position: absolute;
+  right: -73%;
+  bottom: 0;
+  transform: rotate(-20deg);
+}
