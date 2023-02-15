@@ -76,7 +76,7 @@ Example commands:
 ```sh
   mkdir my-folder
   cd my-folder
-  git clone git@github.com:microvese-projects/hello-microverse.git
+  git clone git@github.com:microvese-projects/Portfolio.git
 ```
 -
 
@@ -109,7 +109,7 @@ Tests can be performed using the lighthouse extension on google chrome to get a 
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/microvese-projects/hello-microverse/issues).
+Feel free to check the [issues page](https://github.com/microvese-projects/Portfolio/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
