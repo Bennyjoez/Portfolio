@@ -12,18 +12,18 @@ body {
 }
 
 .navbar {
-  background: #3C3A39;
+  background: #3c3a39;
   padding: 2px 24px;
 }
 
 .navbar ul {
   list-style: none;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #FFF;
   display: flex;
   justify-content: space-between;
 }
@@ -34,7 +34,7 @@ body {
 
 /* headline */
 .headline {
-  background: #1C1A19;
+  background: #1c1a19;
   height: 90vh;
   display: flex;
   flex-direction: column;
@@ -45,8 +45,8 @@ body {
 }
 
 .greeting {
-  color: #FF6B00;
-  font-family: 'Crete Round';
+  color: #ff6b00;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
@@ -55,23 +55,23 @@ body {
 }
 
 .title {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
   display: flex;
   align-items: center;
-  color: #FFF5E1;
+  color: #fff5e1;
 }
 
 .headline-description {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #FFF;
 }
 
 .socials {
