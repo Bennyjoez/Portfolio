@@ -137,38 +137,3 @@ body {
   line-height: 150%;
   color: #091e42;
 }
-
-.skills {
-  display: flex;
-  list-style: none;
-  justify-content: left;
-}
-
-.skills li {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  color: #091e42;
-  line-height: 20px;
-  padding: 10px 12px;
-  background: #fff;
-  border: 1px solid #8993a4;
-  margin-right: 12px
-}
-
-.see-project {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 141%;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #fff;
-  padding: 12px;
-  border: none;
-  height: 48px;
-  background: #ff6b00;
-  width: 150px;
-}
