@@ -224,6 +224,10 @@ body {
 #about-me {
   background: #1c1a19;
   padding-top: 120px;
+  background-image: url("./images/about-me.svg");
+  background-repeat: no-repeat;
+  background-size: 300px 400px;
+  background-position: 70vw center;
 }
 
 #about-me > hr {
@@ -260,18 +264,3 @@ body {
   color: #f4f5f7;
 }
 
-/* #get-resume {
-  padding: 12px;
-  gap: 10px;
-  width: 180px;
-  background: #ff6b00;
-  border: none;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 141%;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #fff;
-} */
