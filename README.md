@@ -45,10 +45,8 @@ This project was created in HTML and CSS width a mobile build in view.
 
 ### Key Features <a name="key-features"></a>
 I plan to implement the following features: 
-- **[Projects]**
-This section will list my completed projects. 
-- **[About me]**
-This section will depict an image of me and my tech stack.
+- **[Modal]** 
+This section will showcase the description for each projects on click.
 - **[Contacts]**
 This section will provide an avenue for visitors to contact and reach out to me.
 
