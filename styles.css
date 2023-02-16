@@ -100,3 +100,14 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+/* projects */
+.projects-title {
+  font-family: 'Crete Round';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  align-items: center;
+  color: #1c1a19;
+}
