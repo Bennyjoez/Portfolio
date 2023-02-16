@@ -172,3 +172,15 @@ body {
   background: #ff6b00;
   width: 150px;
 }
+
+.see-project:hover, .skills li:hover {
+  color: #ff6b00;
+  background:#fff5e1;
+  border: 1px solid #ff6b00;
+  cursor: pointer;
+}
+
+.see-project:active, .skills li:active {
+  color: #fff;
+  background: #ff5800;
+}
