@@ -223,4 +223,48 @@ body {
 /* about me section */
 #about-me {
   background: #1c1a19;
+  padding-top: 120px;
+}
+
+#about-me > hr {
+  width: 80vw;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.about-me-intro {
+  margin-bottom: 120px;
+  margin-inline: 24px;
+  max-width: 90vw;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#about-me-title {
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 122%;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+}
+
+#about-me-description {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #f4f5f7;
+}
+
+#get-resume {
+  padding: 12px;
+  gap: 10px;
+  width: 160px;
+  /* height: 48px; */
+  background: #ff6b00;
+  border: none;
 }
