@@ -58,7 +58,7 @@ body {
 
 .greeting {
   color: #ff6b00;
-  font-family: 'Crete Round', serif;
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
@@ -103,7 +103,7 @@ body {
 
 /* projects */
 .projects-title {
-  font-family: 'Crete Round';
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -127,7 +127,7 @@ body {
 }
 
 .project-card-heading {
-  font-family: 'Crete Round';
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -136,7 +136,7 @@ body {
 }
 
 .project-card-description {
-  font-family: 'Inter';
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -151,7 +151,7 @@ body {
 }
 
 .skills li {
-  font-family: 'Inter';
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -160,11 +160,12 @@ body {
   padding: 10px 12px;
   background: #fff;
   border: 1px solid #8993a4;
-  margin-right: 12px
+  margin-right: 12px;
 }
 
-.see-project, #get-resume {
-  font-family: 'Inter';
+.see-project,
+#get-resume {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -179,14 +180,18 @@ body {
   width: 180px;
 }
 
-.see-project:hover, .skills li:hover, #get-resume:hover {
+.see-project:hover,
+.skills li:hover,
+#get-resume:hover {
   color: #ff6b00;
-  background:#fff5e1;
+  background: #fff5e1;
   border: 1px solid #ff6b00;
   cursor: pointer;
 }
 
-.see-project:active, .skills li:active, #get-resume:active {
+.see-project:active,
+.skills li:active,
+#get-resume:active {
   color: #fff;
   background: #ff5800;
 }
@@ -201,7 +206,9 @@ body {
   background-size: cover;
 }
 
-.inactive .project-card-heading, .inactive .project-card-description, .inactive ul {
+.inactive .project-card-heading,
+.inactive .project-card-description,
+.inactive ul {
   color: #fff;
   padding-inline: 16px;
 }
@@ -256,7 +263,7 @@ body {
 }
 
 #about-me-description {
-  font-family: 'Inter';
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -286,7 +293,7 @@ body {
 }
 
 .list-title {
-  font-family: 'InaiMathi' Roboto sans-serif ;
+  font-family: 'InaiMathi', Roboto, sans-serif ;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -298,7 +305,7 @@ body {
 }
 
 .list-items li {
-  font-family: 'Inter';
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
