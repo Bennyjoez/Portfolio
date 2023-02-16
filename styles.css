@@ -200,9 +200,6 @@ body {
   padding-inline: 16px;
 }
 
-.inactive .project-card-description {
-}
-
 .inactive ul li {
   background: rgba(255, 255, 255, 0.24);
   color: #fff;
@@ -211,4 +208,8 @@ body {
 .inactive .see-project {
   width: 100%;
   margin-top: 14px;
+}
+
+.inactive img {
+  display: none;
 }
