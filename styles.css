@@ -163,7 +163,7 @@ body {
   margin-right: 12px
 }
 
-.see-project {
+.see-project, #get-resume {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
@@ -176,17 +176,17 @@ body {
   border: none;
   height: 48px;
   background: #ff6b00;
-  width: 150px;
+  width: 180px;
 }
 
-.see-project:hover, .skills li:hover {
+.see-project:hover, .skills li:hover, #get-resume:hover {
   color: #ff6b00;
   background:#fff5e1;
   border: 1px solid #ff6b00;
   cursor: pointer;
 }
 
-.see-project:active, .skills li:active {
+.see-project:active, .skills li:active, #get-resume:active {
   color: #fff;
   background: #ff5800;
 }
@@ -260,7 +260,7 @@ body {
   color: #f4f5f7;
 }
 
-#get-resume {
+/* #get-resume {
   padding: 12px;
   gap: 10px;
   width: 180px;
@@ -274,4 +274,4 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #fff;
-}
+} */
