@@ -219,3 +219,8 @@ body {
 .inactive img {
   display: none;
 }
+
+/* about me section */
+#about-me {
+  background: #1c1a19;
+}
