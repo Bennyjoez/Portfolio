@@ -41,7 +41,7 @@ body {
 }
 
 /* headline */
-.headline {
+#headline {
   background: #1c1a19;
   height: 90vh;
   display: flex;
