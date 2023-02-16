@@ -50,6 +50,11 @@ body {
   gap: 12px;
   padding-inline: 24px;
   position: relative;
+
+  background-image: url("./images/blob1.png");
+  background-repeat: no-repeat;
+  background-size: 400px 300px;
+  background-position: 70vw bottom;
 }
 
 .greeting {
@@ -80,6 +85,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #fff;
+  max-width: 85vw;
 }
 
 .socials {
@@ -94,13 +100,4 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.blob {
-  height: 300px;
-  width: 400px;
-  position: absolute;
-  right: -260px;
-  bottom: 0;
-  transform: rotate(-20deg);
 }
