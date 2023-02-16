@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 375px;
+  overflow-x: hidden;
+}
+
+.navbar {
+  background: #3c3a39;
+  padding: 2px 24px;
+}
+
+.navbar ul {
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar ul .menu {
+  cursor: pointer;
+}
+
+.navbar ul .menu:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar ul .nav-item {
+  padding: 10px 12px;
+}
+
+/* headline */
+.headline {
+  background: #1c1a19;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  padding-inline: 24px;
+  position: relative;
+  background-image: url("./images/blob1.png");
+  background-repeat: no-repeat;
+  background-size: 400px 300px;
+  background-position: 70vw bottom;
+}
+
+.greeting {
+  color: #ff6b00;
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+}
+
+.title {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #fff5e1;
+}
+
+.headline-description {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  max-width: 85vw;
+}
+
+.socials {
+  display: flex;
+  width: 60%;
+  max-width: 400px;
+  justify-content: space-around;
+}
+
+.socials > * {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
