@@ -195,6 +195,16 @@ body {
   padding-inline: 16px;
 }
 
+.list-items li {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 194%;
+  text-align: center;
+  color: #fff;
+}
+
 .inactive ul li {
   background: rgba(255, 255, 255, 0.24);
   color: #fff;
@@ -275,7 +285,7 @@ body {
 }
 
 .list-title {
-  font-family: 'InaiMathi', Roboto, sans-serif ;
+  font-family: 'InaiMathi', Roboto, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -284,16 +294,6 @@ body {
   display: flex;
   align-items: center;
   position: relative;
-}
-
-.list-items li {
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 194%;
-  text-align: center;
-  color: #fff;
 }
 
 /* icon */
