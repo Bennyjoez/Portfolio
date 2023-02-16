@@ -112,6 +112,12 @@ body {
   color: #1c1a19;
 }
 
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
 /* card */
 .project-card {
   margin: 0 24px 24px 24px;
