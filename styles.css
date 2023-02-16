@@ -180,28 +180,10 @@ body {
   width: 180px;
 }
 
-.see-project:hover,
-.skills li:hover,
-#get-resume:hover {
-  color: #ff6b00;
-  background: #fff5e1;
-  border: 1px solid #ff6b00;
-  cursor: pointer;
-}
-
-.see-project:active,
-.skills li:active,
-#get-resume:active {
-  color: #fff;
-  background: #ff5800;
-}
-
 /* inactive project card */
 .inactive {
   padding-top: 80px;
-  background-image: 
-    linear-gradient(180deg, transparent, rgba(0, 0, 0, 1)),
-    url("./images/background2.png");
+  background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, 1)), url("./images/background2.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -315,7 +297,7 @@ body {
 }
 
 /* icon */
-.square-icon{
+.square-icon {
   height: 18px;
   width: 18px;
   background: #ff6b00;
@@ -329,4 +311,21 @@ body {
 
 .rotate {
   rotate: 45deg;
+}
+
+/* hover and active styles */
+.see-project:hover,
+.skills li:hover,
+#get-resume:hover {
+  color: #ff6b00;
+  background: #fff5e1;
+  border: 1px solid #ff6b00;
+  cursor: pointer;
+}
+
+.see-project:active,
+.skills li:active,
+#get-resume:active {
+  color: #fff;
+  background: #ff5800;
 }
