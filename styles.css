@@ -263,8 +263,15 @@ body {
 #get-resume {
   padding: 12px;
   gap: 10px;
-  width: 160px;
-  /* height: 48px; */
+  width: 180px;
   background: #ff6b00;
   border: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 141%;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
 }
