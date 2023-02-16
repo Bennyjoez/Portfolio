@@ -108,6 +108,67 @@ body {
   font-weight: 400;
   font-size: 40px;
   line-height: 52px;
-  align-items: center;
+  text-align: center;
   color: #1c1a19;
+}
+
+/* card */
+.project-card {
+  margin: 0 24px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.project-card-heading {
+  font-family: 'Crete Round';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091e42;
+}
+
+.project-card-description {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #091e42;
+}
+
+.skills {
+  display: flex;
+  list-style: none;
+  justify-content: left;
+}
+
+.skills li {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: #091e42;
+  line-height: 20px;
+  padding: 10px 12px;
+  background: #fff;
+  border: 1px solid #8993a4;
+  margin-right: 12px
+}
+
+.see-project {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 141%;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  height: 48px;
+  background: #ff6b00;
+  width: 150px;
 }
