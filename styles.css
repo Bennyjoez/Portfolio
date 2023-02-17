@@ -9,11 +9,15 @@
 body {
   min-width: 375px;
   overflow-x: hidden;
+  position: relative;
 }
 
 .navbar {
   background: #3c3a39;
   padding: 2px 24px;
+  position: fixed;
+  z-index: 14;
+  width: 100vw;
 }
 
 .navbar ul {
@@ -43,7 +47,7 @@ body {
 /* headline */
 #headline {
   background: #1c1a19;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
