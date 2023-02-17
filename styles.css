@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins&family=Roboto:wght@700&display=swap');
 
 * {
   padding: 0;
@@ -9,11 +9,15 @@
 body {
   min-width: 375px;
   overflow-x: hidden;
+  position: relative;
 }
 
 .navbar {
   background: #3c3a39;
   padding: 2px 24px;
+  position: fixed;
+  z-index: 14;
+  width: 100vw;
 }
 
 .navbar ul {
@@ -41,9 +45,9 @@ body {
 }
 
 /* headline */
-.headline {
+#headline {
   background: #1c1a19;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -58,7 +62,7 @@ body {
 
 .greeting {
   color: #ff6b00;
-  font-family: 'Crete Round', serif;
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
@@ -99,4 +103,239 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* projects */
+.projects-title {
+  width: 320px;
+  margin-block: 120px 80px;
+  margin-inline: auto;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #212121;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #1c1a19;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+/* card */
+.project-card {
+  margin: 0 24px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.project-card-heading {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091e42;
+}
+
+.project-card-description {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #091e42;
+}
+
+.skills {
+  display: flex;
+  list-style: none;
+  justify-content: left;
+}
+
+.skills li {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: #091e42;
+  line-height: 20px;
+  padding: 10px 12px;
+  background: #fff;
+  border: 1px solid #8993a4;
+  margin-right: 12px;
+}
+
+.see-project,
+#get-resume {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 141%;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  height: 48px;
+  background: #ff6b00;
+  width: 180px;
+}
+
+/* inactive project card */
+.inactive {
+  padding-top: 80px;
+  background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, 1)), url("./images/background2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.inactive .project-card-heading,
+.inactive .project-card-description,
+.inactive ul {
+  color: #fff;
+  padding-inline: 16px;
+}
+
+.list-items li {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 194%;
+  text-align: center;
+  color: #fff;
+}
+
+.inactive ul li {
+  background: rgba(255, 255, 255, 0.24);
+  color: #fff;
+}
+
+.inactive .see-project {
+  width: 100%;
+  margin-top: 14px;
+}
+
+.inactive img {
+  display: none;
+}
+
+/* about me section */
+#about-me {
+  background: #1c1a19;
+  padding-top: 120px;
+}
+
+#about-me > hr {
+  width: 90vw;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.about-me-intro {
+  padding-bottom: 140px;
+  padding-inline: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-image: url("./images/about-me.svg");
+  background-repeat: no-repeat;
+  background-size: 350px 310px;
+  background-position: 260px 215px;
+  width: 100;
+}
+
+#about-me-title {
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 122%;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+}
+
+#about-me-description {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #f4f5f7;
+}
+
+/* skills section */
+.about-skils-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 120px;
+}
+
+.list {
+  text-align: center;
+}
+
+.list-items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.list-title {
+  font-family: 'InaiMathi', Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 138%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 24px;
+}
+
+/* icon */
+.square-icon {
+  height: 18px;
+  width: 18px;
+  background: #ff6b00;
+  position: absolute;
+  left: -40px;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.rotate {
+  rotate: 45deg;
+}
+
+/* hover and active styles */
+.see-project:hover,
+.skills li:hover,
+#get-resume:hover {
+  color: #ff6b00;
+  background: #fff5e1;
+  border: 1px solid #ff6b00;
+  cursor: pointer;
+}
+
+.see-project:active,
+.skills li:active,
+#get-resume:active {
+  color: #fff;
+  background: #ff5800;
 }

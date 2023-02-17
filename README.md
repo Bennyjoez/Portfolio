@@ -45,12 +45,10 @@ This project was created in HTML and CSS width a mobile build in view.
 
 ### Key Features <a name="key-features"></a>
 I plan to implement the following features: 
-- **[Projects]**
-This section will list my completed projects. 
-- **[About me]**
-This section will depict an image of me and my tech stack.
-- **[Contacts]**
-This section will provide an avenue for visitors to contact and reach out to me.
+- **[Projects]** 
+This section showcases the summary and actions for each of my dope projects.
+- **[About_me]**
+This section provides information about my capabilities in terms of skills, languages and frameworks. 
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -103,6 +101,16 @@ Tests can be performed using the lighthouse extension on google chrome to get a 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+I plan to add the following features:
+
+- [ ] **[contact_feature]**
+- [ ] **[modal_feature]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
@@ -132,6 +140,6 @@ I would like to thank Microverse for the outstanding collection of information t
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.
+This project is [MIT](https://github.com/microvese-projects/Portfolio/blob/34cdc02fb58baf920500a4210907c0d03ef488f4/LICENSE.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
