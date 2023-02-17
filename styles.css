@@ -246,7 +246,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  /* border-bottom: 1px solid #fff; */
   background-image: url("./images/about-me.svg");
   background-repeat: no-repeat;
   background-size: 350px 310px;
