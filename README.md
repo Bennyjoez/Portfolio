@@ -45,10 +45,10 @@ This project was created in HTML and CSS width a mobile build in view.
 
 ### Key Features <a name="key-features"></a>
 I plan to implement the following features: 
-- **[Modal]** 
-This section will showcase the description for each projects on click.
-- **[Contacts]**
-This section will provide an avenue for visitors to contact and reach out to me.
+- **[Projects]** 
+This section showcases the summary and actions for each of my dope projects.
+- **[About_me]**
+This section provides information about my capabilities in terms of skills, languages and frameworks. 
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -98,6 +98,16 @@ Tests can be performed using the lighthouse extension on google chrome to get a 
 - GitHub: [@bennyjoez](https://github.com/bennyjoez)
 - Twitter: [@bennyjoezz](https://twitter.com/bennyjoezz)
 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+I plan to add the following features:
+
+- [ ] **[contact_feature]**
+- [ ] **[modal_feature]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
