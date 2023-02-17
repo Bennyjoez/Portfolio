@@ -103,6 +103,11 @@ body {
 
 /* projects */
 .projects-title {
+  width: 320px;
+  margin-block: 120px 80px;
+  margin-inline: auto;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #212121;
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
