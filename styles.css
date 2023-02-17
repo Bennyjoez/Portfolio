@@ -249,7 +249,7 @@ body {
   background-image: url("./images/about-me.svg");
   background-repeat: no-repeat;
   background-size: 350px 310px;
-  background-position: 250px 140%;
+  background-position: 260px 215px;
   width: 100;
 }
 
@@ -290,7 +290,7 @@ body {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 8px;
 }
 
 .list-title {
@@ -303,6 +303,7 @@ body {
   display: flex;
   align-items: center;
   position: relative;
+  margin-bottom: 24px;
 }
 
 /* icon */
