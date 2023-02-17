@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins&family=Roboto:wght@700&display=swap');
 
 * {
   padding: 0;
@@ -208,7 +208,7 @@ body {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 194%;
   text-align: center;
   color: #fff;
@@ -232,25 +232,26 @@ body {
 #about-me {
   background: #1c1a19;
   padding-top: 120px;
-  background-image: url("./images/about-me.svg");
-  background-repeat: no-repeat;
-  background-size: 300px 400px;
-  background-position: 70vw 250px;
 }
 
 #about-me > hr {
-  width: 80vw;
+  width: 90vw;
   margin: 0 auto;
   color: #fff;
 }
 
 .about-me-intro {
-  margin-bottom: 120px;
-  margin-inline: 24px;
-  max-width: 90vw;
+  padding-bottom: 140px;
+  padding-inline: 24px;
   display: flex;
   flex-direction: column;
   gap: 24px;
+  /* border-bottom: 1px solid #fff; */
+  background-image: url("./images/about-me.svg");
+  background-repeat: no-repeat;
+  background-size: 350px 310px;
+  background-position: 250px 140%;
+  width: 100;
 }
 
 #about-me-title {
