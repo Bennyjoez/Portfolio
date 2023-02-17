@@ -130,6 +130,6 @@ I would like to thank Microverse for the outstanding collection of information t
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.
+This project is [MIT](https://github.com/microvese-projects/Portfolio/blob/34cdc02fb58baf920500a4210907c0d03ef488f4/LICENSE.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
