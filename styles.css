@@ -391,3 +391,22 @@ textarea {
   width: fit-content;
   margin: 0 auto;
 }
+
+/* footer */
+hr {
+  margin-top: 120px;
+  margin-bottom: 15px;
+}
+.social-footer {
+  list-style: none;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.social-footer li {
+  flex: 1;
+  display: grid;
+  place-items: center;
+}
