@@ -232,7 +232,7 @@ body {
 /* about me section */
 #about-me {
   background: #1c1a19;
-  padding-top: 120px;
+  padding-block: 120px;
 }
 
 #about-me > hr {
@@ -396,7 +396,9 @@ textarea {
 hr {
   margin-top: 120px;
   margin-bottom: 15px;
+  border-top: 1px solid #dfe1e6;
 }
+
 .social-footer {
   list-style: none;
   width: 200px;
@@ -409,4 +411,5 @@ hr {
   flex: 1;
   display: grid;
   place-items: center;
+  padding: 8px;
 }
