@@ -408,7 +408,7 @@ textarea {
   margin: 0 auto;
 }
 
-.social-footer li {
+#footer .social-footer li {
   flex: 1;
   display: grid;
   place-items: center;
