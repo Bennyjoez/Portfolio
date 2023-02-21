@@ -190,6 +190,12 @@ body {
   width: 180px;
 }
 
+/* contact btn specifics */
+#contact-btn {
+  width: fit-content;
+  margin: 0 auto;
+}
+
 /* inactive project card */
 .inactive {
   padding-top: 80px;
@@ -383,17 +389,12 @@ textarea {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 15px;
-  color: #3C3A39;
-  background:  #fbf8f7;
-}
-
-#contact-btn {
-  width: fit-content;
-  margin: 0 auto;
+  color: #3c3a39;
+  background: #fbf8f7;
 }
 
 /* footer */
-hr {
+#footer hr {
   margin-top: 120px;
   margin-bottom: 15px;
   border-top: 1px solid #dfe1e6;
