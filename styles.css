@@ -345,3 +345,13 @@ body {
   padding-top: 120px;
   padding-inline: 24px;
 }
+
+.contact-intro {
+  text-align: center;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  color: #172b4d;
+  margin-bottom: 58px;
+}
