@@ -339,3 +339,9 @@ body {
   color: #fff;
   background: #ff5800;
 }
+
+/* contact form */
+#contact {
+  padding-top: 120px;
+  padding-inline: 24px;
+}
