@@ -173,7 +173,8 @@ body {
 }
 
 .see-project,
-#get-resume {
+#get-resume,
+#contact-btn {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -326,7 +327,8 @@ body {
 /* hover and active styles */
 .see-project:hover,
 .skills li:hover,
-#get-resume:hover {
+#get-resume:hover,
+#contact-btn:hover {
   color: #ff6b00;
   background: #fff5e1;
   border: 1px solid #ff6b00;
@@ -335,7 +337,8 @@ body {
 
 .see-project:active,
 .skills li:active,
-#get-resume:active {
+#get-resume:active,
+#contact-btn:active {
   color: #fff;
   background: #ff5800;
 }
@@ -356,8 +359,6 @@ body {
   margin-bottom: 58px;
 }
 
-/* form */
-
 form {
   display: flex;
   flex-direction: column;
@@ -367,6 +368,9 @@ form {
 input {
   padding: 15px 16px;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
   border: none;
   border-bottom: 1px solid #dbd8d7;
   color: #979493;
@@ -380,4 +384,10 @@ textarea {
   font-weight: 400;
   font-size: 15px;
   color: #3C3A39;
+  background:  #fbf8f7;
+}
+
+#contact-btn {
+  width: fit-content;
+  margin: 0 auto;
 }
