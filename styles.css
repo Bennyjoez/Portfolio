@@ -173,7 +173,8 @@ body {
 }
 
 .see-project,
-#get-resume {
+#get-resume,
+#contact-btn {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -187,6 +188,12 @@ body {
   height: 48px;
   background: #ff6b00;
   width: 180px;
+}
+
+/* contact btn specifics */
+#contact-btn {
+  width: fit-content;
+  margin: 0 auto;
 }
 
 /* inactive project card */
@@ -231,7 +238,7 @@ body {
 /* about me section */
 #about-me {
   background: #1c1a19;
-  padding-top: 120px;
+  padding-block: 120px;
 }
 
 #about-me > hr {
@@ -326,7 +333,8 @@ body {
 /* hover and active styles */
 .see-project:hover,
 .skills li:hover,
-#get-resume:hover {
+#get-resume:hover,
+#contact-btn:hover {
   color: #ff6b00;
   background: #fff5e1;
   border: 1px solid #ff6b00;
@@ -335,7 +343,74 @@ body {
 
 .see-project:active,
 .skills li:active,
-#get-resume:active {
+#get-resume:active,
+#contact-btn:active {
   color: #fff;
   background: #ff5800;
+}
+
+/* contact form */
+#contact {
+  padding-top: 120px;
+  padding-inline: 24px;
+}
+
+.contact-intro {
+  text-align: center;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  color: #172b4d;
+  margin-bottom: 58px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+input {
+  padding: 15px 16px;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+  color: #979493;
+}
+
+textarea {
+  height: 114px;
+  border: none;
+  padding: 12px;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #3c3a39;
+  background: #fbf8f7;
+}
+
+/* footer */
+#footer hr {
+  margin-top: 120px;
+  margin-bottom: 15px;
+  border-top: 1px solid #dfe1e6;
+}
+
+.social-footer {
+  list-style: none;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+#footer .social-footer li {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  padding: 8px;
 }

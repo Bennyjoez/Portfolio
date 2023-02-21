@@ -91,12 +91,17 @@ Tests can be performed using the lighthouse extension on google chrome to get a 
 
 <!-- AUTHORS -->
 
-## 👥 Author <a name="author"></a>
+## 👥 Authors <a name="author"></a>
 
 👤 **Benson Njuguna**
 
 - GitHub: [@bennyjoez](https://github.com/bennyjoez)
 - Twitter: [@bennyjoezz](https://twitter.com/bennyjoezz)
+
+👤 **Spencer Okyere**
+
+- GitHub: [@skabeo](https://github.com/skabeo)
+- Twitter: [@black_okyere](https://twitter.com/black_okyere)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
