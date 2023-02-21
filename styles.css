@@ -348,10 +348,36 @@ body {
 
 .contact-intro {
   text-align: center;
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
   color: #172b4d;
   margin-bottom: 58px;
+}
+
+/* form */
+
+form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+input {
+  padding: 15px 16px;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+  color: #979493;
+}
+
+textarea {
+  height: 114px;
+  border: none;
+  padding: 12px;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #3C3A39;
 }
