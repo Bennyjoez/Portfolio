@@ -426,7 +426,8 @@ textarea {
   }
 
   .links {
-    display: block;
+    display: flex;
+    margin-right: 142px;
   }
 
   .nav-links {
@@ -434,7 +435,12 @@ textarea {
     align-items: center;
     column-gap: 8px;
     height: 100%;
+    width: 100%;
     border: 1px solid red;
+  }
+
+  .navbar .links .nav-links li {
+    padding: 10px 12px;
   }
 
   .navbar a {
