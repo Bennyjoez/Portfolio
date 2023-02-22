@@ -611,7 +611,6 @@ textarea {
   }
 
   .contact-intro {
-    /* width: 30%; */
     max-width: 455px;
     text-align: left;
     font-size: 40px;
@@ -646,7 +645,7 @@ textarea {
   }
 
   #about-me {
-    background-position: 70vw 15%;
+    background-position: 70vw 25%;
   }
 
   .project-card:not(.inactive) .information {
