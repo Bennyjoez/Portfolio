@@ -460,4 +460,49 @@ textarea {
     justify-content: center;
     align-self: center;
   }
+
+  /* headline */ 
+  #headline {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: start;
+    padding-left: 0;
+  }
+
+  .socials {
+    height: 200px;
+    width: fit-content;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 36px;
+    margin-right: 90px;
+  }
+
+  .intro {
+    width: 566px;
+  }
+
+  .greeting {
+    font-size: 72px;
+    line-height: 113%;
+    color: #f55800;
+  }
+
+  .title {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 138%;
+    align-items: center;
+    color: #fff;
+    margin-block: 24px;
+  }
+
+  .headline-description {
+    font-family: 'Inter';
+    font-size: 20px;
+    line-height: 160%;
+    color: #f4f5f7;
+  }
 }
