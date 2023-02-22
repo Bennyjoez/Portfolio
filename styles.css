@@ -428,4 +428,23 @@ textarea {
   .links {
     display: block;
   }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    height: 100%;
+    border: 1px solid red;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+  }
 }
