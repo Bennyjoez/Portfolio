@@ -600,11 +600,42 @@ textarea {
   .list-items li {
     text-align: start;
   }
+
+  /* contact */
+  .contact-container {
+    width: 1200px;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    gap: 24px;
+  }
+
+  .contact-intro {
+    /* width: 30%; */
+    max-width: 455px;
+    text-align: left;
+    font-size: 40px;
+    line-height: 130%;
+    color: #262626;
+  }
+
+  form {
+    flex: 1;
+  }
+
+  #contact-btn {
+    margin: 0;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 965px) {
   .intro {
     width: 450px;
+  }
+
+  .contact-intro {
+    font-size: 38px;
+    line-height: 48px;
   }
 }
 
