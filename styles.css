@@ -134,6 +134,9 @@ body {
 /* card */
 .project-card {
   margin: 0 24px 24px 24px;
+}
+
+.information {
   display: flex;
   flex-direction: column;
   gap: 12px;
