@@ -58,10 +58,10 @@ body {
   gap: 12px;
   padding-inline: 24px;
   position: relative;
-  background-image: url("./images/blob1.png");
+  background-image: url("./images/headlline-blob.svg");
   background-repeat: no-repeat;
   background-size: 400px 300px;
-  background-position: 70vw bottom;
+  background-position: 63vw bottom;
 }
 
 .greeting {
