@@ -452,4 +452,11 @@ textarea {
     line-height: 20px;
     text-align: center;
   }
+
+  #mail a {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
 }
