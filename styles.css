@@ -125,10 +125,6 @@ body {
   color: #1c1a19;
 }
 
-.projects-header hr {
-  display: none;
-}
-
 .projects-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -599,6 +595,10 @@ textarea {
     background-size: 350px 310px;
     background-position: 70vw 8%;
     background-size: 670px 350px;
+  }
+
+  #about-me > hr {
+    width: 80%;
   }
 
   .about-me-intro {
