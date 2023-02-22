@@ -299,10 +299,6 @@ body {
   margin-top: 120px;
 }
 
-.list {
-  text-align: center;
-}
-
 .list-items {
   list-style: none;
   display: flex;
@@ -597,7 +593,12 @@ textarea {
 
   .about-skils-section {
     flex-direction: row;
-    gap: 30px;
+    justify-content: space-around;
+    align-items: start;
+  }
+
+  .list-items li {
+    text-align: start;
   }
 }
 
