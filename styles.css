@@ -463,7 +463,7 @@ textarea {
     align-self: center;
   }
 
-  /* headline */ 
+  /* headline */
   #headline {
     flex-direction: row-reverse;
     align-items: center;
@@ -504,7 +504,7 @@ textarea {
   }
 
   .headline-description {
-    font-family: 'Inter';
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
     font-size: 20px;
     line-height: 160%;
     color: #f4f5f7;
@@ -552,7 +552,7 @@ textarea {
     margin-right: auto;
   }
 
-  .skills li {
+  .projects .projects-container .project-card .information .skills li {
     padding: 10px;
   }
 
@@ -592,7 +592,6 @@ textarea {
   #about-me {
     background-image: url("./images/about-me.svg");
     background-repeat: no-repeat;
-    background-size: 350px 310px;
     background-position: 70vw 8%;
     background-size: 670px 350px;
   }
@@ -620,7 +619,7 @@ textarea {
     align-items: start;
   }
 
-  .list-items li {
+  #about-me .about-skils-section .list .list-items li {
     text-align: start;
   }
 
