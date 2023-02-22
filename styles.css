@@ -523,8 +523,8 @@ textarea {
   }
 
   .project-card:not(.inactive) img {
-    width: 700px;
-    max-width: 50%;
+    width: 50%;
+    max-width: 700px;
     height: auto;
     flex: 1;
     margin-left: auto;
@@ -574,9 +574,30 @@ textarea {
   }
 
   /* about me */
+  #about-me {
+    background-image: url("./images/about-me.svg");
+    background-repeat: no-repeat;
+    background-size: 350px 310px;
+    background-position: 70vw 8%;
+    background-size: 670px 350px;
+  }
 
   .about-me-intro {
     width: 566px;
+    margin-left: 142px;
+    padding-bottom: 0;
+    margin-bottom: 130px;
+    background-image: none;
+  }
+
+  #about-me-description {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .about-skils-section {
+    flex-direction: row;
+    gap: 30px;
   }
 }
 
@@ -590,6 +611,10 @@ textarea {
   .project-card:not(.inactive) img {
     max-width: 60%;
     flex: 1;
+  }
+
+  #about-me {
+    background-position: 70vw 15%;
   }
 
   .project-card:not(.inactive) .information {
