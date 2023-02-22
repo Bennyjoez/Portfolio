@@ -421,6 +421,7 @@ textarea {
 
 /* big screen css */
 @media only screen and (min-width: 768px) {
+  /* navbar */
   .navbar .menu {
     display: none;
   }
