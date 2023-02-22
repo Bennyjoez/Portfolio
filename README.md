@@ -49,6 +49,8 @@ I plan to implement the following features:
 This section showcases the summary and actions for each of my dope projects.
 - **[About_me]**
 This section provides information about my capabilities in terms of skills, languages and frameworks. 
+- **[Contact]**
+This section provides inputs for users to leave messages to the owner of the website.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -111,8 +113,7 @@ Tests can be performed using the lighthouse extension on google chrome to get a 
 ## 🔭 Future Features <a name="future-features"></a>
 I plan to add the following features:
 
-- [ ] **[contact_feature]**
-- [ ] **[modal_feature]**
+- [ ] **[Projects_Modal]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
