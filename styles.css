@@ -125,6 +125,10 @@ body {
   color: #1c1a19;
 }
 
+.projects-header hr {
+  display: none;
+}
+
 .projects-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -511,6 +515,25 @@ textarea {
   }
 
   /* projects */
+  .projects-title {
+    border-bottom: none;
+    margin-left: 10%;
+    position: relative;
+    margin-bottom: 114px;
+    padding-bottom: 0;
+    color: #091e42;
+  }
+
+  .projects-title::after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #212121;
+    width: 50vw;
+    max-width: 794px;
+    top: 50%;
+    left: 105%;
+  }
+
   .project-card:not(.inactive) {
     display: flex;
     justify-content: center;
