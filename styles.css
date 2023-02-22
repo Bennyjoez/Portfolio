@@ -510,10 +510,50 @@ textarea {
     line-height: 160%;
     color: #f4f5f7;
   }
+
+  /* projects */
+  .project-card:not(.inactive) {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding-right: 15px;
+    /* border: 1px solid red; */
+  }
+
+  .project-card:not(.inactive) img {
+    width: 700px;
+    max-width: 50%;
+    height: auto;
+    flex: 1;
+    margin-left: auto;
+  }
+
+  .project-card:not(.inactive) .information {
+    width: 450px;
+    max-width: 30%;
+    height: fit-content;
+    margin-right: auto;
+  }
+
+  .skills li {
+    padding: 10px;
+  }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 965px) {
   .intro {
     width: 450px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 999px) {
+  .project-card:not(.inactive) img {
+    max-width: 60%;
+    flex: 1;
+  }
+
+  .project-card:not(.inactive) .information {
+    max-width: 40%;
   }
 }
