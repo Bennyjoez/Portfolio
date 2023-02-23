@@ -445,6 +445,15 @@ textarea {
     padding: 10px 12px;
   }
 
+  .navbar .links .nav-links li a {
+    transition: color 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
+  .navbar .links .nav-links li a:hover {
+    color: #f55800;
+    
+  }
+
   .navbar a {
     text-decoration: none;
     color: #fff;
