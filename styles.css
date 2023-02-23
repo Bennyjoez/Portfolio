@@ -83,6 +83,21 @@ body {
   display: flex;
   align-items: center;
   color: #fff5e1;
+  animation: hide-title 6s infinite cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@keyframes hide-title {
+  0% {
+    opacity: 0.1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.1;
+  }
 }
 
 .headline-description {
@@ -652,6 +667,14 @@ textarea {
 
   form {
     flex: 1;
+  }
+
+  form input {
+    transition: box-shadow 0.25s 0.05s;
+  }
+
+  form input:hover {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
   }
 
   #contact-btn {
