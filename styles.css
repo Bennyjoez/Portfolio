@@ -44,6 +44,10 @@ body {
   padding: 10px 12px;
 }
 
+.links {
+  display: none;
+}
+
 /* headline */
 #headline {
   background: #1c1a19;
@@ -54,10 +58,10 @@ body {
   gap: 12px;
   padding-inline: 24px;
   position: relative;
-  background-image: url("./images/blob1.png");
+  background-image: url("./images/headlline-blob.svg");
   background-repeat: no-repeat;
   background-size: 400px 300px;
-  background-position: 70vw bottom;
+  background-position: 63vw bottom;
 }
 
 .greeting {
@@ -130,6 +134,9 @@ body {
 /* card */
 .project-card {
   margin: 0 24px 24px 24px;
+}
+
+.information {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -199,9 +206,13 @@ body {
 /* inactive project card */
 .inactive {
   padding-top: 80px;
-  background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, 1)), url("./images/background2.png");
+  background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("./images/background2.png");
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  row-gap: 24px;
 }
 
 .inactive .project-card-heading,
@@ -257,7 +268,6 @@ body {
   background-repeat: no-repeat;
   background-size: 350px 310px;
   background-position: 260px 215px;
-  width: 100;
 }
 
 #about-me-title {
@@ -287,10 +297,6 @@ body {
   align-items: center;
   gap: 24px;
   margin-top: 120px;
-}
-
-.list {
-  text-align: center;
 }
 
 .list-items {
@@ -413,4 +419,258 @@ textarea {
   display: grid;
   place-items: center;
   padding: 8px;
+}
+
+/* big screen css */
+@media only screen and (min-width: 768px) {
+  /* navbar */
+  .navbar .menu {
+    display: none;
+  }
+
+  .links {
+    display: flex;
+    margin-right: 142px;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .navbar .links .nav-links li {
+    padding: 10px 12px;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  #mail a {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+
+  /* headline */
+  #headline {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: start;
+    padding-left: 0;
+    background-size: 1150px auto;
+    background-position: 65vw center;
+  }
+
+  .socials {
+    height: 200px;
+    width: fit-content;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 36px;
+    margin-right: 90px;
+  }
+
+  .intro {
+    width: 566px;
+  }
+
+  .greeting {
+    font-size: 72px;
+    line-height: 113%;
+    color: #f55800;
+  }
+
+  .title {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 138%;
+    align-items: center;
+    color: #fff;
+    margin-block: 24px;
+  }
+
+  .headline-description {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 160%;
+    color: #f4f5f7;
+  }
+
+  /* projects */
+  .projects-title {
+    border-bottom: none;
+    margin-left: 10%;
+    position: relative;
+    margin-bottom: 114px;
+    padding-bottom: 0;
+    color: #091e42;
+  }
+
+  .projects-title::after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #212121;
+    width: 50vw;
+    max-width: 794px;
+    top: 50%;
+    left: 105%;
+  }
+
+  .project-card:not(.inactive) {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding-right: 15px;
+  }
+
+  .project-card:not(.inactive) img {
+    width: 50%;
+    max-width: 700px;
+    height: auto;
+    flex: 1;
+    margin-left: auto;
+  }
+
+  .project-card:not(.inactive) .information {
+    width: 450px;
+    max-width: 30%;
+    height: fit-content;
+    margin-right: auto;
+  }
+
+  .projects .projects-container .project-card .information .skills li {
+    padding: 10px;
+  }
+
+  .inactive-cards-container {
+    display: grid;
+    width: 1200px;
+    max-width: 90vw;
+    justify-content: center;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    grid-auto-flow: row;
+    grid-auto-rows: 430px;
+  }
+
+  .inactive .see-project {
+    display: none;
+  }
+
+  .inactive:hover {
+    border: 2px solid #091e42;
+    background-image: url("./images/background2.png");
+  }
+
+  .inactive:hover > * {
+    display: none;
+  }
+
+  .inactive:hover .see-project {
+    display: initial;
+  }
+
+  .inactive .skills {
+    margin-bottom: 8px;
+  }
+
+  /* about me */
+  #about-me {
+    background-image: url("./images/about-me.svg");
+    background-repeat: no-repeat;
+    background-position: 70vw 8%;
+    background-size: 670px 350px;
+  }
+
+  #about-me > hr {
+    width: 80%;
+  }
+
+  .about-me-intro {
+    width: 566px;
+    margin-left: 142px;
+    padding-bottom: 0;
+    margin-bottom: 130px;
+    background-image: none;
+  }
+
+  #about-me-description {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .about-skils-section {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+  }
+
+  #about-me .about-skils-section .list .list-items li {
+    text-align: start;
+  }
+
+  /* contact */
+  .contact-container {
+    width: 1200px;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    gap: 24px;
+  }
+
+  .contact-intro {
+    max-width: 455px;
+    text-align: left;
+    font-size: 40px;
+    line-height: 130%;
+    color: #262626;
+  }
+
+  form {
+    flex: 1;
+  }
+
+  #contact-btn {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 965px) {
+  .intro {
+    width: 450px;
+  }
+
+  .contact-intro {
+    font-size: 38px;
+    line-height: 48px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 999px) {
+  .project-card:not(.inactive) img {
+    max-width: 60%;
+    flex: 1;
+  }
+
+  #about-me {
+    background-position: 70vw 25%;
+  }
+
+  .project-card:not(.inactive) .information {
+    max-width: 40%;
+  }
 }
