@@ -393,6 +393,10 @@ form {
   row-gap: 24px;
 }
 
+form label {
+  display: none;
+}
+
 input {
   padding: 15px 16px;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
