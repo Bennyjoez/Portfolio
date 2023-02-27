@@ -83,6 +83,21 @@ body {
   display: flex;
   align-items: center;
   color: #fff5e1;
+  animation: hide-title 6s infinite cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+@keyframes hide-title {
+  0% {
+    opacity: 0.1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.1;
+  }
 }
 
 .headline-description {
@@ -195,6 +210,7 @@ body {
   height: 48px;
   background: #ff6b00;
   width: 180px;
+  transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 /* contact btn specifics */
@@ -445,7 +461,7 @@ textarea {
     padding: 10px 12px;
   }
 
-  .navbar a {
+  .navbar ul .links .nav-links li a {
     text-decoration: none;
     color: #fff;
     font-family: 'Inter', Arial, Helvetica, sans-serif;
@@ -454,6 +470,11 @@ textarea {
     font-size: 15px;
     line-height: 20px;
     text-align: center;
+    transition: color 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
+  .navbar ul .links .nav-links li a:hover {
+    color: #f55800;
   }
 
   #mail a {
@@ -642,6 +663,14 @@ textarea {
 
   form {
     flex: 1;
+  }
+
+  form input {
+    transition: box-shadow 0.25s 0.05s;
+  }
+
+  form input:hover {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
   }
 
   #contact-btn {
