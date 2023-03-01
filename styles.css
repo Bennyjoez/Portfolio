@@ -707,3 +707,10 @@ textarea {
     max-width: 40%;
   }
 }
+
+@media only screen and (min-width: 400px) and (max-width: 772px) {
+  .about-me-intro {
+    background-size: 500px 450px;
+    background-position: 75vw 40px;
+  }
+}
