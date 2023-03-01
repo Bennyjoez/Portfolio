@@ -331,6 +331,7 @@ body {
   color: #fff;
   display: flex;
   align-items: center;
+  gap: 10px;
   position: relative;
   margin-bottom: 24px;
 }
@@ -340,8 +341,6 @@ body {
   height: 18px;
   width: 18px;
   background: #ff6b00;
-  position: absolute;
-  left: -40px;
 }
 
 .circle {
@@ -639,6 +638,7 @@ textarea {
   }
 
   .about-skils-section {
+    padding-right: 100px;
     flex-direction: row;
     justify-content: space-around;
     align-items: start;
@@ -705,5 +705,12 @@ textarea {
 
   .project-card:not(.inactive) .information {
     max-width: 40%;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 772px) {
+  .about-me-intro {
+    background-size: 500px 450px;
+    background-position: 75vw 40px;
   }
 }
