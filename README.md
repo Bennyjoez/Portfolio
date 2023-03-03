@@ -60,9 +60,18 @@ This section provides inputs for users to leave messages to the owner of the web
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
+> Link to my deployed project.
 
 - [Live Demo Link](https://microvese-projects.github.io/Portfolio/#contact)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- Video Walkthrough -->
+## Video Walkthrough <a name="outline-video"></a>
+
+> Click on the [link](https://www.loom.com/share/92dccfd50e4f4f179f54d51ac98e7e8c) to watch an outline video of my project.
+[Outline Video](https://www.loom.com/share/92dccfd50e4f4f179f54d51ac98e7e8c)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
