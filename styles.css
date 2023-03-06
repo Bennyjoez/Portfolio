@@ -440,6 +440,20 @@ textarea {
   padding: 8px;
 }
 
+/* hamburger menu */
+#hamburger-content {
+  height: 90Vh;
+  width: 100vw;
+  background: #3c3a39;
+  mix-blend-mode: normal;
+  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 15;
+  display: none;
+}
+
 /* big screen css */
 @media only screen and (min-width: 768px) {
   /* navbar */
