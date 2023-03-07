@@ -1,16 +1,21 @@
-let hamburgerIcon = document.querySelector("#hamburger-menu");
-let hamburgerContentContainer = document.querySelector(".links");
-const closeHamburgerBtn = document.querySelector("#close-hamburger");
+const hamburgerIcon = document.querySelector("#hamburger-menu");
+const hamburgerContentContainer = document.querySelector(".links");
 
 hamburgerIcon.addEventListener("click", showMenu);
-closeHamburgerBtn.addEventListener("click", closeMenu)
 
 function showMenu() {
   hamburgerContentContainer.classList.toggle("hamburger-content");
   hamburgerContentContainer.style.display = "block";
+  // get nav-links in hamburger view
+  const navLinks = document.querySelectorAll(".hamburger-content li");
+  navLinks.forEach(navigationClose);
 }
 
 function closeMenu() {
   hamburgerContentContainer.classList.toggle("hamburger-content");
   hamburgerContentContainer.style.display = "none";
+}
+
+function navigationClose(link) {
+  link.addEventListener("click", closeMenu);
 }
