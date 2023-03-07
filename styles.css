@@ -64,10 +64,26 @@ body {
 .hamburger-content .nav-links {
   display: flex;
   padding: 24px;
-  margin: 40px;
+  /* margin: 40px; */
   flex-direction: column;
   justify-content: center;
   align-items: left;
+}
+
+.hamburger-content .nav-links li {
+  padding: 16px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #6f6c6b;
+}
+
+.hamburger-content .nav-links a {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 138%;
+  color: #fff5e1;
+  text-decoration: none;
 }
 
 /* close hamburger */
