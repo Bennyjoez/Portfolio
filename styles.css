@@ -441,7 +441,7 @@ textarea {
 }
 
 /* hamburger menu */
-#hamburger-content {
+.hamburger-content {
   height: 90Vh;
   width: 100vw;
   background: #3c3a39;
