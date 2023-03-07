@@ -4,7 +4,7 @@ const hamburgerContentContainer = document.querySelector(".links");
 hamburgerIcon.addEventListener("click", showMenu);
 
 function showMenu() {
-  hamburgerContentContainer.classList.toggle("hamburger-content");
+  hamburgerContentContainer.classList.add("hamburger-content");
   
   // get nav-links in hamburger view
   const navLinks = document.querySelectorAll(".hamburger-content li");
@@ -12,7 +12,7 @@ function showMenu() {
 }
 
 function closeMenu() {
-  hamburgerContentContainer.classList.toggle("hamburger-content");
+  hamburgerContentContainer.classList.remove("hamburger-content");
 }
 
 function navigationClose(link) {
