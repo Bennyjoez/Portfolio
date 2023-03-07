@@ -5,7 +5,7 @@ hamburgerIcon.addEventListener("click", showMenu);
 
 function showMenu() {
   hamburgerContentContainer.classList.toggle("hamburger-content");
-  hamburgerContentContainer.style.display = "block";
+  
   // get nav-links in hamburger view
   const navLinks = document.querySelectorAll(".hamburger-content li");
   navLinks.forEach(navigationClose);
@@ -13,7 +13,6 @@ function showMenu() {
 
 function closeMenu() {
   hamburgerContentContainer.classList.toggle("hamburger-content");
-  hamburgerContentContainer.style.display = "none";
 }
 
 function navigationClose(link) {

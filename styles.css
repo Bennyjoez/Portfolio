@@ -50,6 +50,7 @@ body {
 
 /* hamburger menu */
 .hamburger-content {
+  display: block;
   height: 87Vh;
   width: 100vw;
   background: #3c3a39;
@@ -525,6 +526,10 @@ textarea {
 
   .navbar ul .links .nav-links li a:hover {
     color: #f55800;
+  }
+
+  #close-hamburger {
+    display: none;
   }
 
   #mail a {
