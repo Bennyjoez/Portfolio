@@ -1,8 +1,9 @@
-let hamburgerMenu = document.querySelector(".popup=menu");
+let hamburgerIcon = document.querySelector("#hamburger-menu");
+let hamburgerContentContainer = document.querySelector(".links");
 
-hamburgerMenu.addEventListener("click", showMenu);
+hamburgerIcon.addEventListener("click", showMenu);
 
 function showMenu() {
-  hamburgerMenu.style.display="block";
-  hamburgerMenu.classList.toggle('hamburger-content');
+  hamburgerContentContainer.classList.toggle('hamburger-content');
+  hamburgerContentContainer.style.display="block";
 }
