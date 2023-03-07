@@ -51,7 +51,7 @@ body {
 /* hamburger menu */
 .hamburger-content {
   display: block;
-  height: 87vh;
+  height: 100vh;
   width: 100vw;
   background: #3c3a39;
   mix-blend-mode: normal;
