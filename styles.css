@@ -67,6 +67,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: left;
+  position: relative;
 }
 
 .hamburger-content .nav-links li {
@@ -89,9 +90,8 @@ body {
 #close-hamburger {
   color: #979493;
   font-size: 24px;
-  position: absolute;
-  top: 17px;
-  right: 24px;
+  border-bottom: none;
+  text-align: end;
   cursor: pointer;
 }
 
