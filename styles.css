@@ -442,7 +442,7 @@ textarea {
 
 /* hamburger menu */
 .hamburger-content {
-  height: 90Vh;
+  height: 87Vh;
   width: 100vw;
   background: #3c3a39;
   mix-blend-mode: normal;
@@ -451,7 +451,15 @@ textarea {
   top: 0;
   right: 0;
   z-index: 15;
-  display: none;
+}
+
+.hamburger-content .nav-links {
+  display: flex;
+  padding: 24px;
+  margin: 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
 }
 
 /* close hamburger */
