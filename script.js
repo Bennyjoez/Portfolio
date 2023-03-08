@@ -107,16 +107,17 @@ function showMenu() {
 hamburgerIcon.addEventListener('click', showMenu);
 closeHamburgerBtn.addEventListener('click', closeMenu);
 
-const inactiveCardsContainers = document.querySelector(".inactive-cards-container")
+const activeCardContainer = document.querySelector(".projects-container");
+const inactiveCardsContainers = document.querySelector(".inactive-cards-container");
 
-function displayCards({name, description, featuredImage, technologies}) {
+function displayCards({name, featured, description, featuredImage, technologies}) {
   let card = document.createElement("div");
   let image = document.createElement("img");
   let projectHeading = document.createElement("h3");
   let descriptionP = document.createElement("p");
   let skills = document.createElement("ul");
   let seeProjectBtn = document.createElement("button");
-  card.className = "project-card inactive";
+  card.className = "project-card";
   image.setAttribute("src", featuredImage.link);
   image.setAttribute("alt", featuredImage.alt);
   projectHeading.className = "project-card-heading";
@@ -126,15 +127,32 @@ function displayCards({name, description, featuredImage, technologies}) {
   skills.className = "skills";
   skills.innerHTML = technologies.map(tech => `<li>${tech.split(" ")[0]}</li>`).join("");
   seeProjectBtn.className = "see-project";
-  seeProjectBtn.textContent = "See Project"
-  card.appendChild(image);
-  card.appendChild(projectHeading);
-  card.appendChild(descriptionP);
-  card.appendChild(skills);
-  card.appendChild(seeProjectBtn);
+  seeProjectBtn.textContent = "See Project";
 
-  inactiveCardsContainers.appendChild(card)
+  if(featured === false) {
+    card.classList.add("inactive")
+    card.appendChild(image);
+    card.appendChild(projectHeading);
+    card.appendChild(descriptionP);
+    card.appendChild(skills);
+    card.appendChild(seeProjectBtn);
+  
+    inactiveCardsContainers.appendChild(card)
+  } 
+  else {
+    let projectInfo = document.createElement("div");
+    card.classList.add("featured")
+    projectInfo.className = "information";
+    projectInfo.appendChild(projectHeading);
+    projectInfo.appendChild(descriptionP);
+    projectInfo.appendChild(skills);
+    projectInfo.appendChild(seeProjectBtn);
+    card.appendChild(image);
+    card.appendChild(projectInfo);
+
+    activeCardContainer.appendChild(card);
+  }
+  
 }
 
-// displayCards(projects[0])
-projects.forEach(displayCards)
+projects.forEach(displayCards);
