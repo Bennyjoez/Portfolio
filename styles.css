@@ -198,6 +198,10 @@ body {
   margin: 0 24px 24px 24px;
 }
 
+.project-card.featured {
+  grid-row: 1/2;
+}
+
 .information {
   display: flex;
   flex-direction: column;
