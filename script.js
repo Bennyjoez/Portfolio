@@ -111,29 +111,27 @@ const inactiveCardsContainers = document.querySelector(".inactive-cards-containe
 
 function displayCards({name, description, featuredImage, technologies}) {
   let card = document.createElement("div");
-  card.className = "project-card inactive";
   let image = document.createElement("img");
+  let projectHeading = document.createElement("h3");
+  let descriptionP = document.createElement("p");
+  let skills = document.createElement("ul");
+  let seeProjectBtn = document.createElement("button");
+  card.className = "project-card inactive";
   image.setAttribute("src", featuredImage.link);
   image.setAttribute("alt", featuredImage.alt);
-  card.appendChild(image);
-  let projectHeading = document.createElement("h3");
   projectHeading.className = "project-card-heading";
   projectHeading.textContent = name;
-  card.appendChild(projectHeading);
-  let descriptionP = document.createElement("p");
   descriptionP.className = "project-card-description";
   descriptionP.textContent = description.slice(0, 200);
-  card.appendChild(descriptionP);
-  let skills = document.createElement("ul");
   skills.className = "skills";
   skills.innerHTML = technologies.map(tech => `<li>${tech.split(" ")[0]}</li>`).join("");
-  card.appendChild(skills);
-  let seeProjectBtn = document.createElement("button");
   seeProjectBtn.className = "see-project";
   seeProjectBtn.textContent = "See Project"
+  card.appendChild(image);
+  card.appendChild(projectHeading);
+  card.appendChild(descriptionP);
+  card.appendChild(skills);
   card.appendChild(seeProjectBtn);
-
-  console.log(card);
 
   inactiveCardsContainers.appendChild(card)
 }
