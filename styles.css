@@ -105,7 +105,7 @@ body {
   gap: 12px;
   padding-inline: 24px;
   position: relative;
-  background-image: url("./images/headlline-blob.svg");
+  background-image: url('./images/headlline-blob.svg');
   background-repeat: no-repeat;
   background-size: 400px 300px;
   background-position: 63vw bottom;
@@ -198,6 +198,21 @@ body {
   margin: 0 24px 24px 24px;
 }
 
+#project-details-modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color:rgba(151, 148, 147, 0.2);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+}
+
 .project-card.featured {
   grid-row: 1/2;
 }
@@ -273,7 +288,12 @@ body {
 /* inactive project card */
 .inactive {
   padding-top: 80px;
-  background-image: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("./images/background2.png");
+  background-image: linear-gradient(
+      180.45deg,
+      rgba(38, 38, 38, 0) 0.75%,
+      rgba(38, 38, 38, 0.9) 61.94%
+    ),
+    url('./images/background2.png');
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -331,7 +351,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  background-image: url("./images/about-me.svg");
+  background-image: url('./images/about-me.svg');
   background-repeat: no-repeat;
   background-size: 350px 310px;
   background-position: 260px 215px;
@@ -600,7 +620,7 @@ textarea {
   }
 
   .projects-title::after {
-    content: "";
+    content: '';
     position: absolute;
     border-bottom: 1px solid #212121;
     width: 50vw;
@@ -651,7 +671,7 @@ textarea {
 
   .inactive:hover {
     border: 2px solid #091e42;
-    background-image: url("./images/background2.png");
+    background-image: url('./images/background2.png');
   }
 
   .inactive:hover > * {
@@ -668,7 +688,7 @@ textarea {
 
   /* about me */
   #about-me {
-    background-image: url("./images/about-me.svg");
+    background-image: url('./images/about-me.svg');
     background-repeat: no-repeat;
     background-position: 70vw 8%;
     background-size: 670px 350px;
