@@ -185,5 +185,5 @@ function callDetails(targetId) {
 }
 
 function showProjectDetails({name, featuredImage, description, technologies}) {
-  console.log(name)
+  // display details
 }
