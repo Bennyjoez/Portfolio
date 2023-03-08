@@ -9,6 +9,9 @@
   <!-- link to fontawesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <!-- JavaScript -->
+  <script src="./script.js" defer></script>
+
   <title>Portfolio</title>
 </head>
 <body>
@@ -18,6 +21,9 @@
         <li class="nav-item logo">Bennyjoez</li>
         <li class="links">
           <ul class="nav-links">
+            <li id="close-hamburger">
+              <i class="fa-solid fa-xmark"></i>
+            </li>
             <li>
               <a href="#projects">
                 Portfolio
@@ -40,7 +46,7 @@
             </li>
           </ul>
         </li>
-        <li class="nav-item menu">
+        <li class="nav-item menu" id="hamburger-menu">
           <i class="fa-solid fa-bars"></i>
         </li>
       </ul>
@@ -327,5 +333,6 @@
       </ul>
     </section>
   </main>
+  
 </body>
 </html>
