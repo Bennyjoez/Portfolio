@@ -106,3 +106,37 @@ function showMenu() {
 
 hamburgerIcon.addEventListener('click', showMenu);
 closeHamburgerBtn.addEventListener('click', closeMenu);
+
+const inactiveCardsContainers = document.querySelector(".inactive-cards-container")
+
+function displayCards({name, description, featuredImage, technologies}) {
+  let card = document.createElement("div");
+  card.className = "project-card inactive";
+  let image = document.createElement("img");
+  image.setAttribute("src", featuredImage.link);
+  image.setAttribute("alt", featuredImage.alt);
+  card.appendChild(image);
+  let projectHeading = document.createElement("h3");
+  projectHeading.className = "project-card-heading";
+  projectHeading.textContent = name;
+  card.appendChild(projectHeading);
+  let descriptionP = document.createElement("p");
+  descriptionP.className = "project-card-description";
+  descriptionP.textContent = description.slice(0, 200);
+  card.appendChild(descriptionP);
+  let skills = document.createElement("ul");
+  skills.className = "skills";
+  skills.innerHTML = technologies.map(tech => `<li>${tech.split(" ")[0]}</li>`).join("");
+  card.appendChild(skills);
+  let seeProjectBtn = document.createElement("button");
+  seeProjectBtn.className = "see-project";
+  seeProjectBtn.textContent = "See Project"
+  card.appendChild(seeProjectBtn);
+
+  console.log(card);
+
+  inactiveCardsContainers.appendChild(card)
+}
+
+// displayCards(projects[0])
+projects.forEach(displayCards)
