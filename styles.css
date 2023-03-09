@@ -308,7 +308,7 @@ body {
 }
 
 #popup-heading {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -348,9 +348,18 @@ body {
   padding-bottom: 20px;
 }
 
+#links li {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #links a {
   text-decoration: none;
   display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 12px;
   align-items: center;
   gap: 12px;
@@ -358,6 +367,7 @@ body {
   color: #fff;
   font-weight: 700;
   height: 48px;
+  flex: 1;
 }
 
 #links a img {
