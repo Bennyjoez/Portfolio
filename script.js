@@ -119,14 +119,11 @@ const inactiveCardsContainers = document.querySelector(".inactive-cards-containe
 
 function displayCards({id, name, featured, description, featuredImage, technologies}) {
   let card = document.createElement("div");
-  let image = document.createElement("img");
   let projectHeading = document.createElement("h3");
   let descriptionP = document.createElement("p");
   let skills = document.createElement("ul");
   let seeProjectBtn = document.createElement("button");
   card.className = "project-card";
-  image.setAttribute("src", featuredImage.link);
-  image.setAttribute("alt", featuredImage.alt);
   projectHeading.className = "project-card-heading";
   projectHeading.textContent = name;
   descriptionP.className = "project-card-description";
@@ -139,7 +136,6 @@ function displayCards({id, name, featured, description, featuredImage, technolog
 
   if(featured === false) {
     card.classList.add("inactive")
-    card.appendChild(image);
     card.appendChild(projectHeading);
     card.appendChild(descriptionP);
     card.appendChild(skills);
@@ -148,8 +144,11 @@ function displayCards({id, name, featured, description, featuredImage, technolog
     inactiveCardsContainers.appendChild(card)
   } 
   else {
+    let image = document.createElement("img");
     let projectInfo = document.createElement("div");
     card.classList.add("featured")
+    image.setAttribute("src", featuredImage.link);
+    image.setAttribute("alt", featuredImage.alt);
     projectInfo.className = "information";
     projectInfo.appendChild(projectHeading);
     projectInfo.appendChild(descriptionP);
@@ -197,7 +196,7 @@ function showProjectDetails({name, featuredImage, description, technologies, liv
           <i class="fa-solid fa-xmark"></i>
         </div>
         <h2 id="popup-heading">${name}</h2>
-        <ul class="skills">
+        <ul class="popup-details-skills">
           ${
             technologies.map(tech => `<li>${tech}</li>`).join("")
           }

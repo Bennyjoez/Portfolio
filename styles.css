@@ -198,15 +198,80 @@ body {
   margin: 0 24px 24px 24px;
 }
 
+.project-card.featured {
+  grid-row: 1/2;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.project-card-heading {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091e42;
+}
+
+.project-card-description {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #091e42;
+}
+
+.skills,
+.popup-details-skills {
+  display: flex;
+  list-style: none;
+  justify-content: left;
+}
+
+.skills li,
+.popup-details-skills li {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: #091e42;
+  line-height: 20px;
+  padding: 10px 12px;
+  background: #fff;
+  border: 1px solid #8993a4;
+  margin-right: 12px;
+}
+
+.see-project,
+#get-resume,
+#contact-btn {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 141%;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  height: 48px;
+  background: #ff6b00;
+  width: 180px;
+  transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
 /* project details popup start */
 #project-details-modal {
   position: fixed;
   width: 100%;
-  background-color:rgba(3, 3, 3, 0.596);
+  background-color: rgba(3, 3, 3, 0.596);
   backdrop-filter: blur(6px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   top: 0;
   left: 0;
   right: 0;
@@ -234,7 +299,7 @@ body {
 }
 
 #close:hover i,
-#close:active i{
+#close:active i {
   color: red;
 }
 
@@ -253,7 +318,7 @@ body {
   margin-right: 30px;
 }
 
-#popup-details-card .skills li {
+.popup-details-skills li {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 13px;
@@ -289,7 +354,7 @@ body {
   padding: 12px;
   align-items: center;
   gap: 12px;
-  background: #FF6B00;
+  background: #ff6b00;
   color: #fff;
   font-weight: 700;
   height: 48px;
@@ -298,73 +363,8 @@ body {
 #links a img {
   width: 20px;
 }
+
 /* project details popup end */
-
-.project-card.featured {
-  grid-row: 1/2;
-}
-
-.information {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.project-card-heading {
-  font-family: 'Crete Round', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 44px;
-  color: #091e42;
-}
-
-.project-card-description {
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  color: #091e42;
-}
-
-.skills {
-  display: flex;
-  list-style: none;
-  justify-content: left;
-}
-
-.skills li {
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  color: #091e42;
-  line-height: 20px;
-  padding: 10px 12px;
-  background: #fff;
-  border: 1px solid #8993a4;
-  margin-right: 12px;
-}
-
-.see-project,
-#get-resume,
-#contact-btn {
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 141%;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #fff;
-  padding: 12px;
-  border: none;
-  height: 48px;
-  background: #ff6b00;
-  width: 180px;
-  transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
 
 /* contact btn specifics */
 #contact-btn {
@@ -375,7 +375,8 @@ body {
 /* inactive project card */
 .inactive {
   padding-top: 80px;
-  background-image: linear-gradient(
+  background-image:
+    linear-gradient(
       180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
       rgba(38, 38, 38, 0.9) 61.94%
@@ -414,10 +415,6 @@ body {
 .inactive .see-project {
   width: 100%;
   margin-top: 14px;
-}
-
-.inactive img {
-  display: none;
 }
 
 /* about me section */
@@ -881,6 +878,7 @@ textarea {
   #links {
     margin-top: auto;
   }
+
   /* project details popup desktop end */
 }
 
