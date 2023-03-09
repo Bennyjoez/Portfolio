@@ -18,7 +18,7 @@ const projects = [
     featured: false,
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
     featuredImage: {
-      link: "images/background2.png",
+      link: "./images/popupImage.svg",
       alt: "Background Image"
     },
     technologies: ["html", "Bootstrap", "Ruby on rails"],
@@ -31,7 +31,7 @@ const projects = [
     featured: false,
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
     featuredImage: {
-      link: "images/background2.png",
+      link: "./images/popupImage.svg",
       alt: "Background Image"
     },
     technologies: ["html", "Bootstrap", "Ruby on rails"],
@@ -44,7 +44,7 @@ const projects = [
     featured: false,
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
     featuredImage: {
-      link: "images/background2.png",
+      link: "./images/popupImage.svg",
       alt: "Background Image"
     },
     technologies: ["html", "Bootstrap", "Ruby on rails"],
@@ -57,7 +57,7 @@ const projects = [
     featured: false,
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
     featuredImage: {
-      link: "images/background2.png",
+      link: "./images/popupImage.svg",
       alt: "Background Image"
     },
     technologies: ["html", "Bootstrap", "Ruby on rails"],
@@ -70,7 +70,7 @@ const projects = [
     featured: false,
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
     featuredImage: {
-      link: "images/background2.png",
+      link: "./images/popupImage.svg",
       alt: "Background Image"
     },
     technologies: ["html", "Bootstrap", "Ruby on rails"],
@@ -83,7 +83,7 @@ const projects = [
     featured: false,
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
     featuredImage: {
-      link: "images/background2.png",
+      link: "./images/popupImage.svg",
       alt: "Background Image"
     },
     technologies: ["html", "Bootstrap", "Ruby on rails"],
@@ -184,6 +184,54 @@ function callDetails(targetId) {
   }
 }
 
-function showProjectDetails({name, featuredImage, description, technologies}) {
-  // display details
+const modal = document.querySelector("#project-details-modal");
+let closeModalBtn;
+
+function showProjectDetails({name, featuredImage, description, technologies, liveLink, sourceLink}) {
+  modal.style.display = "block";
+  modal.innerHTML = 
+    `
+    <div id="popup-details-card">
+      <div class="popup-heading">
+        <div id="close">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <h2 id="popup-heading">${name}</h2>
+        <ul class="skills">
+          ${
+            technologies.map(tech => `<li>${tech}</li>`).join("")
+          }
+        </ul>
+      </div>
+      <div id="popup-flex-container">
+        <img src=${featuredImage.link} alt=${featuredImage.alt}>
+        <div id="popup-details">
+          <p id="popup-description">
+            ${description}
+          </p>
+          <ul id="links">
+            <li>
+              <a href=${liveLink}>
+                See Live
+                <img src="./images/Icon-see live.svg" alt="see live icon">
+              </a>
+            </li>
+            <li>
+              <a href=${sourceLink}>
+                See Source
+                <img src="./images/githubPopup.svg" alt="github">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    `
+    closeModalBtn = document.querySelector("#close");
+    closeModalBtn.addEventListener('click', closeModal);
+}
+
+function closeModal() {
+  console.log("close")
+  modal.style.display = "none"
 }
