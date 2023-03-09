@@ -204,7 +204,7 @@ function showProjectDetails({name, featuredImage, description, technologies, liv
         </ul>
       </div>
       <div id="popup-flex-container">
-        <img src=${featuredImage.link} alt=${featuredImage.alt}>
+        <img src=${featuredImage.link} alt=${featuredImage.alt} id="featuredImage">
         <div id="popup-details">
           <p id="popup-description">
             ${description}
