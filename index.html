@@ -11,6 +11,7 @@
 
   <!-- JavaScript -->
   <script src="./script.js" defer></script>
+  <script src="./validation.js" defer></script>
 
   <title>Portfolio</title>
 </head>
@@ -173,14 +174,14 @@
           I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
         </p>
         <!-- form -->
-        <form action="https://formspree.io/f/xpzedlbr" method="POST">
+        <form action="https://formspree.io/f/xpzedlbr" method="POST" id="contact-form">
           <label for="name">Name</label>
           <input type="text" name="username" id="name" placeholder="Full name" maxlength="30" required>
           <label for="email">Email</label>
           <input type="email" name="email" id="email" placeholder="Email address" required>
           <label for="message">Message</label>
           <textarea name="message" id="message" placeholder="Enter text here" maxlength="500" required></textarea>
-  
+          <small id="errormessage" class="errormessage"></small>
           <button type="submit" id="contact-btn">Get in touch</button>
   
         </form>
