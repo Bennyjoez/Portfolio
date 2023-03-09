@@ -277,7 +277,6 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  height: calc(100% + 2px);
   z-index: 20;
   padding: 60px 16px 40px 16px;
   display: none;
