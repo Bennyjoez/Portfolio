@@ -268,24 +268,22 @@ body {
 
 /* project details popup start */
 #project-details-modal {
-  position: fixed;
+  position: absolute;
   width: 100%;
   background-color: rgba(3, 3, 3, 0.596);
   backdrop-filter: blur(6px);
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  height: calc(100% + 2px);
   z-index: 20;
   padding: 60px 16px 40px 16px;
   display: none;
 }
 
 #popup-details-card {
-  height: calc(100% + 2px);
   padding: 16px;
   background-color: #fff;
-  overflow-y: scroll;
   border: 1px solid #dfe1e6;
 }
 
@@ -348,7 +346,7 @@ body {
   padding-bottom: 20px;
 }
 
-#links li {
+#links .links-li {
   flex: 1;
   display: flex;
   justify-content: center;
@@ -361,7 +359,6 @@ body {
   justify-content: center;
   align-items: center;
   padding: 12px;
-  align-items: center;
   gap: 12px;
   background: #ff6b00;
   color: #fff;
@@ -761,6 +758,10 @@ textarea {
     grid-auto-rows: 430px;
   }
 
+  .inactive .see-project-anchor {
+    text-decoration: none;
+  }
+
   .inactive .see-project {
     display: none;
   }
@@ -774,8 +775,9 @@ textarea {
     display: none;
   }
 
-  .inactive:hover .see-project {
-    display: initial;
+  .inactive:hover .see-project,
+  .inactive:hover .see-project-anchor {
+    display: block;
   }
 
   .inactive .skills {

@@ -126,7 +126,10 @@ function displayCards({
   const projectHeading = document.createElement('h3');
   const descriptionP = document.createElement('p');
   const skills = document.createElement('ul');
+  const anchor = document.createElement('a');
   const seeProjectBtn = document.createElement('button');
+  anchor.setAttribute('href', '#popup-details-card');
+  anchor.className = 'see-project-anchor';
   card.className = 'project-card';
   projectHeading.className = 'project-card-heading';
   projectHeading.textContent = name;
@@ -142,7 +145,8 @@ function displayCards({
     card.appendChild(projectHeading);
     card.appendChild(descriptionP);
     card.appendChild(skills);
-    card.appendChild(seeProjectBtn);
+    anchor.appendChild(seeProjectBtn);
+    card.appendChild(anchor);
     inactiveCardsContainers.appendChild(card);
   } else {
     const image = document.createElement('img');
@@ -151,10 +155,11 @@ function displayCards({
     image.setAttribute('src', featuredImage.link);
     image.setAttribute('alt', featuredImage.alt);
     projectInfo.className = 'information';
+    anchor.appendChild(seeProjectBtn);
     projectInfo.appendChild(projectHeading);
     projectInfo.appendChild(descriptionP);
     projectInfo.appendChild(skills);
-    projectInfo.appendChild(seeProjectBtn);
+    projectInfo.appendChild(anchor);
     card.appendChild(image);
     card.appendChild(projectInfo);
     activeCardContainer.appendChild(card);
@@ -190,13 +195,13 @@ function showProjectDetails({
             ${description}
           </p>
           <ul id="links">
-            <li>
+            <li class="links-li">
               <a href=${liveLink}>
                 See Live
                 <img src="./images/Icon-see live.svg" alt="see live icon">
               </a>
             </li>
-            <li>
+            <li class="links-li">
               <a href=${sourceLink}>
                 See Source
                 <img src="./images/githubPopup.svg" alt="github">
