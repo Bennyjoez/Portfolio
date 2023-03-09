@@ -213,6 +213,7 @@ body {
   bottom: 0;
   z-index: 20;
   padding: 60px 16px 40px 16px;
+  display: none;
 }
 
 #popup-details-card {
@@ -229,6 +230,12 @@ body {
   position: absolute;
   padding: 8px;
   right: 0;
+  cursor: pointer;
+}
+
+#close:hover i,
+#close:active i{
+  color: red;
 }
 
 .popup-heading {
