@@ -202,7 +202,7 @@ body {
 #project-details-modal {
   position: fixed;
   width: 100%;
-  background-color:rgba(151, 148, 147, 0.2);
+  background-color:rgba(3, 3, 3, 0.596);
   backdrop-filter: blur(6px);
   display: flex;
   justify-content: center;
