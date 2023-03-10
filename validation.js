@@ -26,3 +26,47 @@ function isvalidEmail(event) {
 }
 
 form.addEventListener('submit', isvalidEmail);
+
+const named = document.querySelector("#name");
+const messageObj = {
+  username: `${named.value}`,
+  email: `${email.value}`,
+}
+
+function updateMessage(input, value) {
+  messageObj[input] = value;
+  const objString = JSON.stringify(messageObj);
+  localStorage["messageObj"] = objString;
+  console.log("update", localStorage)
+}
+
+function populateStorage(messageObj) {
+  const objString = JSON.stringify(messageObj);
+  localStorage.setItem("messageObj", objString);
+  console.log("populate", localStorage)
+}
+
+function validateStorage(messageObj) {
+  if(!localStorage.getItem(messageObj)) {
+    return false;
+  } else {
+    return true;
+  }
+}
+
+function respond(e) {
+  setTimeout(() => {
+    let value = e.target.value;
+    let input = e.target.name;
+    if (validateStorage('messageObj')) {
+      updateMessage(input, value);
+    } else {
+      messageObj.email = email.value;
+      messageObj.name = named.value;
+      populateStorage(messageObj);
+    }
+  }, 1000)
+}
+
+named.addEventListener('keyup', respond);
+email.addEventListener('keyup', respond);
