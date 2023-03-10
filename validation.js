@@ -37,13 +37,11 @@ function updateMessage(input, value) {
   messageObj[input] = value;
   const objString = JSON.stringify(messageObj);
   localStorage["messageObj"] = objString;
-  console.log("update", localStorage)
 }
 
 function populateStorage(messageObj) {
   const objString = JSON.stringify(messageObj);
   localStorage.setItem("messageObj", objString);
-  console.log("populate", localStorage)
 }
 
 function validateStorage(messageObj) {
