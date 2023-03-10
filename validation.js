@@ -37,7 +37,7 @@ form.addEventListener('submit', isvalidEmail);
 function updateMessage(input, value) {
   messageObj[input] = value;
   const objString = JSON.stringify(messageObj);
-  localStorage['messageObj'] = objString;
+  localStorage.messageObj = objString;
 }
 
 function populateStorage(messageObj) {
@@ -48,30 +48,37 @@ function populateStorage(messageObj) {
 function validateStorage(messageObj) {
   if (!localStorage.getItem(messageObj)) {
     return false;
-  } else {
-    return true;
   }
+  return true;
 }
 
-function respond(e) {
-  let value = e.target.value;
-  let input = e.target.name;
+function respond({
+  value, name,
+}) {
+  const valued = value;
+  const input = name;
   if (validateStorage('messageObj')) {
     updateMessage(input, value);
   } else {
-    messageObj[input] = value;
+    messageObj[input] = valued;
     populateStorage(messageObj);
   }
 }
 
 window.onload = function setFormInputs() {
-  const objStored = validateStorage("messageObj");
-  let stored = JSON.parse(localStorage.getItem('messageObj'));
-  email.value = objStored ? stored.email : "";
-  named.value = objStored ? stored.username : "";
-  description.value = objStored ? stored.message : "";
+  const objStored = validateStorage('messageObj');
+  const stored = JSON.parse(localStorage.getItem('messageObj'));
+  email.value = objStored ? stored.email : '';
+  named.value = objStored ? stored.username : '';
+  description.value = objStored ? stored.message : '';
 };
 
-named.addEventListener('change', respond);
-email.addEventListener('change', respond);
-description.addEventListener('change', respond);
+named.addEventListener('change', (e) => {
+  respond(e.target);
+});
+email.addEventListener('change', (e) => {
+  respond(e.target);
+});
+description.addEventListener('change', (e) => {
+  respond(e.target);
+});
