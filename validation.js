@@ -64,6 +64,13 @@ function respond(e) {
   }
 }
 
+window.onload = function setFormInputs() {
+  let stored = JSON.parse(localStorage.getItem('messageObj'));
+  email.value = stored.email;
+  named.value = stored.username;
+  description.value = stored.message;
+};
+
 named.addEventListener('change', respond);
 email.addEventListener('change', respond);
 description.addEventListener('change', respond);
