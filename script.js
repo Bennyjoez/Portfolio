@@ -1,16 +1,34 @@
 const projects = [
   {
     id: 1,
-    name: 'Multi-Post Stories',
+    name: 'To Do List App',
     featured: true,
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    description: "The To-Do List app is a project that was created to provide it's users with a tool to list some tasks that they would like to accomplish within a day. The key features of this app include: an input, a list area, clear all button and reset button. The input allows the user to type a description for a task. The list shows all added tasks with the individual checkboxes, edit areas and trash icons. A user can mark a task as complete, edit the task and delete an individual task. The clear all completed button allows the user to remove all tasks that have been marked as complete. The reset button allows the user to reset the entire list to an empty list. I used html, css and JavaScript to implement this project. In the course of implementing the exercise, I faced a few challenges such as making the rest button to rotate on click. I found a solution on the w3 articles on animations. I would like to add a section that lists all previously completed tasks in future",
     featuredImage: {
-      link: 'images/multi-post-stories.png',
-      alt: 'Background image',
+      link: 'images/project-images/todolist/todolist1.png',
+      alt: 'Todo List front page',
     },
-    technologies: ['html', 'Bootstrap', 'Ruby on rails'],
-    liveLink: '#',
-    sourceLink: '#',
+    images: [
+      {
+        src: 'images/project-images/todolist/todolist1.png',
+        alt: 'Input text',
+      },
+      {
+        src: 'images/project-images/todolist/todolist2.png',
+        alt: 'Add item',
+      },
+      {
+        src: 'images/project-images/todolist/todolist3.png',
+        alt: 'Mark task as complete',
+      },
+      {
+        src: 'images/project-images/todolist/todolist4.png',
+        alt: 'Edit and delete task',
+      },
+    ],
+    technologies: ['html', 'css', 'javascript'],
+    liveLink: 'https://microvese-projects.github.io/ToDoList/',
+    sourceLink: 'https://github.com/microvese-projects/ToDoList.git',
   },
   {
     id: 2,
@@ -21,6 +39,12 @@ const projects = [
       link: './images/popupImage.svg',
       alt: 'Background Image',
     },
+    images: [
+      {
+        src: 'images/popupImage.svg',
+        alt: 'Input text',
+      },
+    ],
     technologies: ['html', 'Bootstrap', 'Ruby on rails'],
     liveLink: '#',
     sourceLink: '#',
@@ -34,6 +58,12 @@ const projects = [
       link: './images/popupImage.svg',
       alt: 'Background Image',
     },
+    images: [
+      {
+        src: 'images/popupImage.svg',
+        alt: 'Input text',
+      },
+    ],
     technologies: ['html', 'Bootstrap', 'Ruby on rails'],
     liveLink: '#',
     sourceLink: '#',
@@ -47,6 +77,12 @@ const projects = [
       link: './images/popupImage.svg',
       alt: 'Background Image',
     },
+    images: [
+      {
+        src: 'images/popupImage.svg',
+        alt: 'Input text',
+      },
+    ],
     technologies: ['html', 'Bootstrap', 'Ruby on rails'],
     liveLink: '#',
     sourceLink: '#',
@@ -60,6 +96,12 @@ const projects = [
       link: './images/popupImage.svg',
       alt: 'Background Image',
     },
+    images: [
+      {
+        src: 'images/popupImage.svg',
+        alt: 'Input text',
+      },
+    ],
     technologies: ['html', 'Bootstrap', 'Ruby on rails'],
     liveLink: '#',
     sourceLink: '#',
@@ -73,6 +115,12 @@ const projects = [
       link: './images/popupImage.svg',
       alt: 'Background Image',
     },
+    images: [
+      {
+        src: 'images/popupImage.svg',
+        alt: 'Input text',
+      },
+    ],
     technologies: ['html', 'Bootstrap', 'Ruby on rails'],
     liveLink: '#',
     sourceLink: '#',
@@ -86,6 +134,12 @@ const projects = [
       link: './images/popupImage.svg',
       alt: 'Background Image',
     },
+    images: [
+      {
+        src: 'images/popupImage.svg',
+        alt: 'Input text',
+      },
+    ],
     technologies: ['html', 'Bootstrap', 'Ruby on rails'],
     liveLink: '#',
     sourceLink: '#',
@@ -119,9 +173,10 @@ closeHamburgerBtn.addEventListener('click', closeMenu);
 const activeCardContainer = document.querySelector('.projects-container');
 const inactiveCardsContainers = document.querySelector('.inactive-cards-container');
 
-function displayCards({
-  id, name, featured, description, featuredImage, technologies,
-}) {
+function displayCards(obj) {
+  const {
+    id, name, featured, description, featuredImage, technologies,
+  } = obj;
   const card = document.createElement('div');
   const projectHeading = document.createElement('h3');
   const descriptionP = document.createElement('p');
@@ -149,18 +204,21 @@ function displayCards({
     card.appendChild(anchor);
     inactiveCardsContainers.appendChild(card);
   } else {
+    const div = document.createElement('div');
+    div.id = 'featured-background';
     const image = document.createElement('img');
     const projectInfo = document.createElement('div');
     card.classList.add('featured');
     image.setAttribute('src', featuredImage.link);
     image.setAttribute('alt', featuredImage.alt);
+    div.appendChild(image);
     projectInfo.className = 'information';
     anchor.appendChild(seeProjectBtn);
     projectInfo.appendChild(projectHeading);
     projectInfo.appendChild(descriptionP);
     projectInfo.appendChild(skills);
     projectInfo.appendChild(anchor);
-    card.appendChild(image);
+    card.appendChild(div);
     card.appendChild(projectInfo);
     activeCardContainer.appendChild(card);
   }
@@ -173,9 +231,10 @@ function closeModal() {
   modal.style.display = 'none';
 }
 
-function showProjectDetails({
-  name, featuredImage, description, technologies, liveLink, sourceLink,
-}) {
+function showProjectDetails(obj) {
+  const {
+    name, images, description, technologies, liveLink, sourceLink,
+  } = obj;
   modal.style.display = 'block';
   modal.innerHTML = `
     <div id="popup-details-card">
@@ -189,7 +248,9 @@ function showProjectDetails({
         </ul>
       </div>
       <div id="popup-flex-container">
-        <img src=${featuredImage.link} alt=${featuredImage.alt} id="featuredImage">
+        <div id="images-container">
+          ${images.map(({ src, alt }) => `<img src=${src} alt=${alt} class="popup-images"></img>`)}
+        </div>
         <div id="popup-details">
           <p id="popup-description">
             ${description}
