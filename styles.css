@@ -202,6 +202,15 @@ body {
   grid-row: 1/2;
 }
 
+#featured-background {
+  padding: 24px;
+  background: #ff6b00;
+}
+
+.project-card.featured img {
+  max-width: calc(100vw - 98px);
+}
+
 .information {
   display: flex;
   flex-direction: column;
@@ -283,6 +292,7 @@ body {
 }
 
 #popup-details-card {
+  min-width: 300px;
   padding: 16px;
   background-color: #fff;
   border: 1px solid #dfe1e6;
@@ -325,9 +335,16 @@ body {
   color: #3c3a39;
 }
 
-#popup-details-card img {
+#images-container {
+  display: flex;
+  overflow-x: scroll;
   width: 100%;
+}
+
+.popup-images {
   margin-block: 24px;
+  max-width: 100%;
+  aspect-ratio: 16/10;
 }
 
 #popup-description {
@@ -736,14 +753,14 @@ textarea {
     justify-content: center;
     gap: 24px;
     padding-right: 15px;
+    margin-inline: auto;
   }
 
   .project-card:not(.inactive) img {
-    width: 50%;
-    max-width: 700px;
+    max-width: 400px;
     height: auto;
     flex: 1;
-    margin-left: auto;
+    margin: 20px;
   }
 
   .project-card:not(.inactive) .information {
@@ -880,10 +897,15 @@ textarea {
     margin-top: 40px;
   }
 
-  #popup-flex-container img#featuredImage {
-    flex: 1;
+  #images-container {
+    max-width: 800px;
     margin-top: 0;
     align-self: self-start;
+  }
+
+  .popup-images {
+    max-width: 800px;
+    flex: 1;
   }
 
   #popup-details {
@@ -919,9 +941,8 @@ textarea {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 999px) {
-  .project-card:not(.inactive) img {
-    max-width: 60%;
-    flex: 1;
+  .project-card:not(.inactive) {
+    max-width: 70vw;
   }
 
   #about-me {
