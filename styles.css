@@ -208,7 +208,7 @@ body {
 }
 
 .project-card.featured img {
-  max-width: calc(100vw - 98px);
+  width: 100%;
 }
 
 .information {
@@ -337,7 +337,8 @@ body {
 
 #images-container {
   display: flex;
-  overflow-x: scroll;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
   width: 100%;
 }
 
@@ -345,6 +346,7 @@ body {
   margin-block: 24px;
   max-width: 100%;
   aspect-ratio: 16/10;
+  scroll-snap-align: start;
 }
 
 #popup-description {
@@ -631,6 +633,13 @@ textarea {
 }
 
 /* big screen css */
+@media only screen and (min-width: 400px) and (max-width: 772px) {
+  .about-me-intro {
+    background-size: 500px 450px;
+    background-position: 75vw 40px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   /* navbar */
   .navbar .menu {
@@ -750,23 +759,13 @@ textarea {
 
   .project-card:not(.inactive) {
     display: flex;
-    justify-content: center;
-    gap: 24px;
-    padding-right: 15px;
+    flex-direction: column;
+    gap: 15px;
     margin-inline: auto;
   }
 
-  .project-card:not(.inactive) img {
-    max-width: 400px;
-    height: auto;
-    flex: 1;
-    margin: 20px;
-  }
-
   .project-card:not(.inactive) .information {
-    width: 450px;
-    max-width: 30%;
-    margin-right: auto;
+    width: 100%;
   }
 
   .projects .projects-container .project-card .information .skills li {
@@ -880,51 +879,6 @@ textarea {
   }
 }
 
-@media only screen and (min-width: 1000px) {
-  /* project details popup desktop start */
-  #project-details-modal {
-    padding-inline: 120px;
-  }
-
-  #project-details-card {
-    padding: 24px;
-  }
-
-  #popup-flex-container {
-    display: flex;
-    gap: 25px;
-    padding-right: 24px;
-    margin-top: 40px;
-  }
-
-  #images-container {
-    max-width: 800px;
-    margin-top: 0;
-    align-self: self-start;
-  }
-
-  .popup-images {
-    max-width: 800px;
-    flex: 1;
-  }
-
-  #popup-details {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  #popup-description {
-    line-height: 188%;
-  }
-
-  #links {
-    margin-top: auto;
-  }
-
-  /* project details popup desktop end */
-}
-
 @media only screen and (min-width: 768px) and (max-width: 965px) {
   .intro {
     width: 450px;
@@ -948,15 +902,82 @@ textarea {
   #about-me {
     background-position: 70vw 25%;
   }
-
-  .project-card:not(.inactive) .information {
-    max-width: 40%;
-  }
 }
 
-@media only screen and (min-width: 400px) and (max-width: 772px) {
-  .about-me-intro {
-    background-size: 500px 450px;
-    background-position: 75vw 40px;
+@media only screen and (min-width: 1000px) {
+  /* project details popup desktop start */
+  #project-details-modal {
+    padding-inline: 120px;
+  }
+
+  .project-card:not(.inactive) {
+    flex-direction: row;
+    padding-inline: 40px;
+  }
+
+  #project-details-card {
+    padding: 24px;
+  }
+
+  #featured-background {
+    max-width: 600px;
+  }
+
+  .project-card:not(.inactive) .information {
+    width: 450px;
+  }
+
+  #popup-flex-container {
+    display: flex;
+    gap: 25px;
+    padding-right: 24px;
+    margin-top: 40px;
+  }
+
+  #images-container {
+    margin-top: 0;
+    align-self: self-start;
+  }
+
+  .popup-images {
+    width: 100%;
+    flex: 1;
+  }
+
+  #popup-details {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #popup-description {
+    line-height: 188%;
+  }
+
+  #links {
+    margin-top: auto;
+  }
+
+  /* project details popup desktop end */
+}
+
+@media only screen and (min-width: 1200px) {
+  #popup-details-card {
+    margin-inline: auto;
+    max-width: 2000px;
+  }
+
+  .popup-images {
+    aspect-ratio: 3/2;
+  }
+
+  #images-container {
+    max-width: 962px;
+    flex: 1;
+  }
+
+  #images-container * {
+    max-width: none;
+    width: 100%;
   }
 }
