@@ -32,22 +32,38 @@ const projects = [
   },
   {
     id: 2,
-    name: 'Professional Art Printing Data',
+    name: 'Leaderboard',
     featured: false,
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    description: "Leaderboard is an app that was created with a game in mind. It represents a game scoring board where a user can feed data on the progress of a game. This includes scores of a particular game per player. The usability is endless as the users can create a score-board for a game of choice and keep the record for as long as they would wish. The games can include: pool-table tournaments, scrabble, monopoly, chess, etc. This is an app created by consuming a REST API. To consume the API, I managed to use async await functions. The app uses different tools, technologies and languages. I used JavaScript to manipulate the DOM, HTML to write the markup, Normal CSS to style the page, Coloors website to get a good blend of colors and webpack to compile the source files. In implementing this build, I faced a couple of challenges; the main one however was that I had a problem setting the correct ID of the established game. This was a problem since with each reload, the browser was calling fetch again and setting a new game with a new ID. This meant a loss of the data already fed for the game before the reload. To solve this, I decided to save a reference of the ID on the browser's localStorage. On reload/load, the browser would check for a stored variable(ID), if it's present, the browser will not call fetch again. However, in the case it's not present, the browser will call fetch, get a new ID, and set a reference to it in the localstorage. This was a good app to build and I see myself using it to play some games with friends.",
     featuredImage: {
-      link: './images/popupImage.svg',
-      alt: 'Background Image',
+      link: 'images/project-images/learderboard/leaderboard1.png',
+      alt: 'Leaderboard',
     },
     images: [
       {
-        src: 'images/popupImage.svg',
-        alt: 'Input text',
+        src: 'images/project-images/learderboard/leaderboard1.png',
+        alt: 'Landing page',
+      },
+      {
+        src: 'images/project-images/learderboard/leaderboard2.png',
+        alt: 'Adding score',
+      },
+      {
+        src: 'images/project-images/learderboard/leaderboard3.png',
+        alt: 'Posted score',
+      },
+      {
+        src: 'images/project-images/learderboard/leaderboard4.png',
+        alt: 'Success message',
+      },
+      {
+        src: 'images/project-images/learderboard/leaderboard5.png',
+        alt: 'Refresh button',
       },
     ],
-    technologies: ['html', 'Bootstrap', 'Ruby on rails'],
-    liveLink: '#',
-    sourceLink: '#',
+    technologies: ['html & css', 'Javascript', 'webpack', 'API'],
+    liveLink: 'https://microvese-projects.github.io/leaderBoard/dist/',
+    sourceLink: 'https://github.com/microvese-projects/leaderBoard',
   },
   {
     id: 3,
@@ -191,7 +207,7 @@ function displayCards(obj) {
   descriptionP.className = 'project-card-description';
   descriptionP.textContent = description.slice(0, 200);
   skills.className = 'skills';
-  skills.innerHTML = technologies.map((tech) => `<li>${tech.split(' ')[0]}</li>`).join('');
+  skills.innerHTML = technologies.slice(0, 3).map((tech) => `<li>${tech.split(' ')[0]}</li>`).join('');
   seeProjectBtn.className = 'see-project';
   seeProjectBtn.textContent = 'See Project';
   seeProjectBtn.setAttribute('id', id);
@@ -202,6 +218,7 @@ function displayCards(obj) {
     card.appendChild(skills);
     anchor.appendChild(seeProjectBtn);
     card.appendChild(anchor);
+    card.style.backgroundImage = `linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(${featuredImage.link})`;
     inactiveCardsContainers.appendChild(card);
   } else {
     const div = document.createElement('div');
