@@ -60,9 +60,9 @@ This section provides inputs for users to leave messages to the owner of the web
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Link to my deployed project.
+<a href="https://microvese-projects.github.io/Portfolio/">![Alt text](images/portfolio.png)</a>
 
-- [Live Demo Link](https://microvese-projects.github.io/Portfolio/#contact)
+- [Live Demo Link](https://microvese-projects.github.io/Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
