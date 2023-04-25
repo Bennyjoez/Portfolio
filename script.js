@@ -62,8 +62,8 @@ const projects = [
       },
     ],
     technologies: ['html & css', 'Javascript', 'webpack', 'API'],
-    liveLink: '#',
-    sourceLink: '#',
+    liveLink: 'https://microvese-projects.github.io/leaderBoard/dist/',
+    sourceLink: 'https://github.com/microvese-projects/leaderBoard',
   },
   {
     id: 3,
