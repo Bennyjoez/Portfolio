@@ -137,60 +137,100 @@ const projects = [
   },
   {
     id: 5,
-    name: 'Professional Art Printing Data',
+    name: 'Bookstore',
     featured: false,
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    description: 'Bookstore is an app that allows the user to manage the progress/status of different books. The app allows users to add, delete, edit, and update books. I used React, Redux-toolkit and APIs in this project. When a user fast loads the page, they see the homepage which is shows a list of books managed in the app. A user can add a book using the form at the bottom and post it to an API. The app does two things at this point, it saves this data to an API and also adds the book to the global state maintained through the redux. Updating the redux store updates the app list and displays the added book. A user can then decide to delete a book from history and this initiates two operations. It sends an API call to delete the book and also updates the global redux state to remove the book from the list of maintained books. The greatest challenge that I faced with this app was implementing the completed status feature per book entry. This was a CSS implementation with a little javascript. I would have just added an image to suffice but I wanted it to be able to display the progress on a percentage basis. I solved this challenge by referencing some articles online that gave a step by step guide on how to solve it and effected it in the app. The app was built with the desktop version in view. By completing this project, I learned how to send delete operations to APIs, working with Redux-toolkit and effecting advanced CSS.',
     featuredImage: {
-      link: './images/popupImage.svg',
-      alt: 'Background Image',
+      link: 'images/project-images/Boostore/home.png',
+      alt: 'Landing page',
     },
     images: [
       {
-        src: 'images/popupImage.svg',
-        alt: 'Input text',
+        src: 'images/project-images/Boostore/add.png',
+        alt: 'Add book',
+      },
+      {
+        src: 'images/project-images/Boostore/added.png',
+        alt: 'Added book',
+      },
+      {
+        src: 'images/project-images/Boostore/remove.png',
+        alt: 'Remove book',
       },
     ],
-    technologies: ['html', 'Bootstrap', 'Ruby on rails'],
-    liveLink: '#',
-    sourceLink: '#',
+    technologies: ['React', 'Redux', 'CSS3', 'API'],
+    liveLink: 'https://bookstore-re.netlify.app/',
+    sourceLink: 'https://github.com/microvese-projects/bookstore-cra',
   },
   {
     id: 6,
-    name: 'Professional Art Printing Data',
+    name: 'OOP School Library',
     featured: false,
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    description: 'OOP School Library is a backend project that is object oriented. The app was built in Ruby. The project is terminal based and the only way to run it is to interact with the terminal (Instructions on the live link). The app emulates the backend operations of a School Library with operations such as registering teachers, students, books and creating rentals. All operations require certain data to be fed by the users input on the terminal. The information added as input on the terminal is retrieved, saved in variables and used to create object representing the teachers, students, books or rentals in the library. If a user mistakenly inputs some operations not listed on the options list, the operation is cancelled, the user is notified and the app loads the options again for another attempt. The user has options to list books, list people, add people, add books, create rentals, list rentals specific to an ID and also exit. The exit operation triggers a save operation which ensures the books, people and rentals created by the user are saved in files. If the files do not exist, the app dynamically creates them and saves the files. On load of the app, the app checks for the files, if they are present, the data is loaded from this files and used to populate the specific objects that the user can then use to maintain the library. The main challenge from this app was making the user interface to display the requests that the users need to respond to. It was time consuming at first as on each reload, the data was lost. To solve the problem, I implemented a file saving system that saves the data on exit. This taught me how to create, and read from files in Ruby.',
     featuredImage: {
-      link: './images/popupImage.svg',
-      alt: 'Background Image',
+      link: 'images/project-images/school-lib/landing.png',
+      alt: 'Landing page',
     },
     images: [
       {
-        src: 'images/popupImage.svg',
-        alt: 'Input text',
+        link: 'images/project-images/school-lib/landing.png',
+        alt: 'Landing page',
+      },
+      {
+        src: 'images/project-images/school-lib/list.png',
+        alt: 'List',
+      },
+      {
+        src: 'images/project-images/school-lib/add-person.png',
+        alt: 'Add person',
+      },
+      {
+        src: 'images/project-images/school-lib/add-book.png',
+        alt: 'Add book',
+      },
+      {
+        src: 'images/project-images/school-lib/add-rental.png',
+        alt: 'Create rental',
+      },
+      {
+        src: 'images/project-images/school-lib/show-rentals.png',
+        alt: 'Show rentals of an ID',
       },
     ],
-    technologies: ['html', 'Bootstrap', 'Ruby on rails'],
-    liveLink: '#',
-    sourceLink: '#',
+    technologies: ['Ruby', 'Terminal-based', 'Documentation'],
+    liveLink: 'https://microvese-projects.github.io/OOP_school_library/',
+    sourceLink: 'https://github.com/microvese-projects/OOP_school_library',
   },
   {
     id: 7,
-    name: 'Professional Art Printing Data',
+    name: 'Meals DB',
     featured: false,
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    description: "Capstone Meals DB is an impressive web application developed in a team. It serves as a platform where users can explore a variety of delicious meals and engage with the community through likes and comments. The project utilizes HTML, CSS, and JavaScript on the client side, along with Webpack for bundling and making API calls. The homepage of Capstone Meals DB showcases an enticing display of different meals, each presented as a card. Users can browse through this collection, getting inspired by the culinary delights on offer. Furthermore, they have the ability to express their appreciation for a meal by liking it. This engagement feature allows users to curate their favorites and share their preferences. A particularly interesting aspect of the application is the \"Comments_Popup\" section. Here, users can select a meal card and delve into a step-by-step recipe guide for preparing that particular dish. Alongside the recipe, users can also post comments and share their thoughts or experiences related to the meal. The comments section fosters interaction and creates a sense of community among users, who can learn from each other's experiences and exchange culinary tips. The project's future roadmap includes the addition of exciting features such as an \"Ingredients\" section, which will provide a comprehensive list of ingredients required for each meal. Additionally, a \"Meal_Presentation\" feature is planned to enhance the visual appeal of the meals and make the browsing experience more enjoyable. Moreover, the team intends to implement an \"Edit_Comment\" functionality, allowing users to modify their previously posted comments.",
     featuredImage: {
-      link: './images/popupImage.svg',
-      alt: 'Background Image',
+      link: 'images/project-images/Meals-db/Home.png',
+      alt: 'Landing page',
     },
     images: [
       {
-        src: 'images/popupImage.svg',
-        alt: 'Input text',
+        link: 'images/project-images/Meals-db/Home.png',
+        alt: 'Landing page',
+      },
+      {
+        src: 'images/project-images/Meals-db/description.png',
+        alt: 'Description page',
+      },
+      {
+        src: 'images/project-images/Meals-db/preparations.png',
+        alt: 'Preparation procedure',
+      },
+      {
+        src: 'images/project-images/Meals-db/comments.png',
+        alt: 'Comments',
       },
     ],
-    technologies: ['html', 'Bootstrap', 'Ruby on rails'],
-    liveLink: '#',
-    sourceLink: '#',
+    technologies: ['html', 'JavaScript', 'CSS', 'Webpack', 'API'],
+    liveLink: 'https://microvese-projects.github.io/capstone-meals-DB/dist',
+    sourceLink: 'https://github.com/microvese-projects/capstone-meals-DB',
   },
 ];
 
