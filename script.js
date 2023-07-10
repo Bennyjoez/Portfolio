@@ -76,6 +76,10 @@ const projects = [
     },
     images: [
       {
+        src: 'images/project-images/Vet-clinic/ER.png',
+        alt: 'ERD',
+      },
+      {
         src: 'images/project-images/Vet-clinic/animals.png',
         alt: 'Animals Table',
       },
@@ -98,22 +102,38 @@ const projects = [
   },
   {
     id: 4,
-    name: 'Professional Art Printing Data',
+    name: 'Crypto Metrics',
     featured: false,
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    description: 'Crypto Metrics is an app created in React and Redux. The app displays the data about the various exchange rates for various cryptocurrencies of the world and the US Dollar. It also allows the user to convert any amount of dollars to the selected currency. A user can come to the app with a goal to convert some value in dollars to their local currency. The website displays two cards: one for local currencies and one for global currencies. Local are the currencies for US states and global is for general world currencies. Rates are updated each time the app reloads. To convert currencies, users can search for their currency using its name or the abbreviations of their currency. For example, I can search for the kenyan shilling or KES in the global markets. Once you click on the currency of choice, you are taken to a calculator that shows you the conversion rate to convert a value. Your task will be to insert the value you want converted in dollars and the app does the rest. This calculator utilizes memo hook in react to ensure the conversion is realtime. The main challenge I faced with this app was calling the API that serves the needed data. I would call the api each time the view changed, dispatching actions to the redux store and this meant my app was always loading. To solve this, I did some research and consulted a few developers and they helped me determine the bug. I had to refine my asyncThunk in redux toolkit to fetch the data properly and limit accidental reload. I learned asyncThunk effectively in the process.',
     featuredImage: {
-      link: './images/popupImage.svg',
-      alt: 'Background Image',
+      link: '/images/project-images/crypto-metrics/home.png',
+      alt: 'Landing',
     },
     images: [
       {
-        src: 'images/popupImage.svg',
-        alt: 'Input text',
+        link: '/images/project-images/crypto-metrics/home.png',
+        alt: 'Landing',
+      },
+      {
+        src: '/images/project-images/crypto-metrics/global.png',
+        alt: 'Global currencies',
+      },
+      {
+        src: '/images/project-images/crypto-metrics/local.png',
+        alt: 'LOcal currencies',
+      },
+      {
+        src: '/images/project-images/crypto-metrics/search.png',
+        alt: 'Search',
+      },
+      {
+        src: '/images/project-images/crypto-metrics/calculator.png',
+        alt: 'Calculator',
       },
     ],
-    technologies: ['html', 'Bootstrap', 'Ruby on rails'],
-    liveLink: '#',
-    sourceLink: '#',
+    technologies: ['React', 'Redux', 'CSS3', 'RestAPI'],
+    liveLink: 'https://currency-metrics.netlify.app/',
+    sourceLink: 'https://github.com/microvese-projects/crypto-metrics',
   },
   {
     id: 5,
