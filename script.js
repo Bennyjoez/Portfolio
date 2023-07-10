@@ -67,22 +67,34 @@ const projects = [
   },
   {
     id: 3,
-    name: 'Professional Art Printing Data',
+    name: 'Vet Clinic',
     featured: false,
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    description: 'Vet Clinic is a veterinary clinic database built with PostgreSQL. The app has the ability to save data on the animals, the owners, the vets, the visits, the species, and specializations. All data is stored on separate tables and relationships between the tables established. Each table in the database is responsible for various information. The animals table stores data on the animal like the animal\'s date of birth, the name, the owner\'s id, and the species id. The owners table stores information on owners: name and age. The vets table stores information on the vets: name, age and date of graduation. The visits table stores data on the animal id,vet id and visit date. The species table stores data on the different species of the animals; we only have "Pokemons" and "Digimons". The specialization table stores data on the species id, and the vet id. It also acts as a joining table between the species and vets. While building the project, I faced a number of challenges. It was my first time using PostgreSQL and the syntax was new to me but I learn quick. Another challenge was working as a group on a database that cannot be shared remotely to a team. To solve this challenge, we had to ensure that we build the project while documenting every operation so the other members could follow on. I learned how to document databases effectively in the process.',
     featuredImage: {
-      link: './images/popupImage.svg',
-      alt: 'Background Image',
+      link: 'images/project-images/Vet-clinic/ER.png',
+      alt: 'Entity Relationship Diagram',
     },
     images: [
       {
-        src: 'images/popupImage.svg',
-        alt: 'Input text',
+        src: 'images/project-images/Vet-clinic/animals.png',
+        alt: 'Animals Table',
+      },
+      {
+        src: 'images/project-images/Vet-clinic/query1.png',
+        alt: 'Queries',
+      },
+      {
+        src: 'images/project-images/Vet-clinic/query2.png',
+        alt: 'Queries',
+      },
+      {
+        src: 'images/project-images/Vet-clinic/query3.png',
+        alt: 'Queries',
       },
     ],
-    technologies: ['html', 'Bootstrap', 'Ruby on rails'],
-    liveLink: '#',
-    sourceLink: '#',
+    technologies: ['PostgreSQL', 'Git', 'Github', 'CL'],
+    liveLink: 'https://microvese-projects.github.io/vet-clinic/',
+    sourceLink: 'https://github.com/microvese-projects/vet-clinic',
   },
   {
     id: 4,
@@ -205,7 +217,7 @@ function displayCards(obj) {
   projectHeading.className = 'project-card-heading';
   projectHeading.textContent = name;
   descriptionP.className = 'project-card-description';
-  descriptionP.textContent = description.slice(0, 200);
+  descriptionP.textContent = `${description.slice(0, 200)}...`;
   skills.className = 'skills';
   skills.innerHTML = technologies.slice(0, 3).map((tech) => `<li>${tech.split(' ')[0]}</li>`).join('');
   seeProjectBtn.className = 'see-project';
