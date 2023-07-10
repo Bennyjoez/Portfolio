@@ -67,98 +67,170 @@ const projects = [
   },
   {
     id: 3,
-    name: 'Professional Art Printing Data',
+    name: 'Vet Clinic',
     featured: false,
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    description: 'Vet Clinic is a veterinary clinic database built with PostgreSQL. The app has the ability to save data on the animals, the owners, the vets, the visits, the species, and specializations. All data is stored on separate tables and relationships between the tables established. Each table in the database is responsible for various information. The animals table stores data on the animal like the animal\'s date of birth, the name, the owner\'s id, and the species id. The owners table stores information on owners: name and age. The vets table stores information on the vets: name, age and date of graduation. The visits table stores data on the animal id,vet id and visit date. The species table stores data on the different species of the animals; we only have "Pokemons" and "Digimons". The specialization table stores data on the species id, and the vet id. It also acts as a joining table between the species and vets. While building the project, I faced a number of challenges. It was my first time using PostgreSQL and the syntax was new to me but I learn quick. Another challenge was working as a group on a database that cannot be shared remotely to a team. To solve this challenge, we had to ensure that we build the project while documenting every operation so the other members could follow on. I learned how to document databases effectively in the process.',
     featuredImage: {
-      link: './images/popupImage.svg',
-      alt: 'Background Image',
+      link: 'images/project-images/Vet-clinic/ER.png',
+      alt: 'Entity Relationship Diagram',
     },
     images: [
       {
-        src: 'images/popupImage.svg',
-        alt: 'Input text',
+        src: 'images/project-images/Vet-clinic/ER.png',
+        alt: 'ERD',
+      },
+      {
+        src: 'images/project-images/Vet-clinic/animals.png',
+        alt: 'Animals Table',
+      },
+      {
+        src: 'images/project-images/Vet-clinic/query1.png',
+        alt: 'Queries',
+      },
+      {
+        src: 'images/project-images/Vet-clinic/query2.png',
+        alt: 'Queries',
+      },
+      {
+        src: 'images/project-images/Vet-clinic/query3.png',
+        alt: 'Queries',
       },
     ],
-    technologies: ['html', 'Bootstrap', 'Ruby on rails'],
-    liveLink: '#',
-    sourceLink: '#',
+    technologies: ['PostgreSQL', 'Git', 'Github', 'CL'],
+    liveLink: 'https://microvese-projects.github.io/vet-clinic/',
+    sourceLink: 'https://github.com/microvese-projects/vet-clinic',
   },
   {
     id: 4,
-    name: 'Professional Art Printing Data',
+    name: 'Crypto Metrics',
     featured: false,
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    description: 'Crypto Metrics is an app created in React and Redux. The app displays the data about the various exchange rates for various cryptocurrencies of the world and the US Dollar. It also allows the user to convert any amount of dollars to the selected currency. A user can come to the app with a goal to convert some value in dollars to their local currency. The website displays two cards: one for local currencies and one for global currencies. Local are the currencies for US states and global is for general world currencies. Rates are updated each time the app reloads. To convert currencies, users can search for their currency using its name or the abbreviations of their currency. For example, I can search for the kenyan shilling or KES in the global markets. Once you click on the currency of choice, you are taken to a calculator that shows you the conversion rate to convert a value. Your task will be to insert the value you want converted in dollars and the app does the rest. This calculator utilizes memo hook in react to ensure the conversion is realtime. The main challenge I faced with this app was calling the API that serves the needed data. I would call the api each time the view changed, dispatching actions to the redux store and this meant my app was always loading. To solve this, I did some research and consulted a few developers and they helped me determine the bug. I had to refine my asyncThunk in redux toolkit to fetch the data properly and limit accidental reload. I learned asyncThunk effectively in the process.',
     featuredImage: {
-      link: './images/popupImage.svg',
-      alt: 'Background Image',
+      link: '/images/project-images/crypto-metrics/home.png',
+      alt: 'Landing',
     },
     images: [
       {
-        src: 'images/popupImage.svg',
-        alt: 'Input text',
+        link: '/images/project-images/crypto-metrics/home.png',
+        alt: 'Landing',
+      },
+      {
+        src: '/images/project-images/crypto-metrics/global.png',
+        alt: 'Global currencies',
+      },
+      {
+        src: '/images/project-images/crypto-metrics/local.png',
+        alt: 'LOcal currencies',
+      },
+      {
+        src: '/images/project-images/crypto-metrics/search.png',
+        alt: 'Search',
+      },
+      {
+        src: '/images/project-images/crypto-metrics/calculator.png',
+        alt: 'Calculator',
       },
     ],
-    technologies: ['html', 'Bootstrap', 'Ruby on rails'],
-    liveLink: '#',
-    sourceLink: '#',
+    technologies: ['React', 'Redux', 'CSS3', 'RestAPI'],
+    liveLink: 'https://currency-metrics.netlify.app/',
+    sourceLink: 'https://github.com/microvese-projects/crypto-metrics',
   },
   {
     id: 5,
-    name: 'Professional Art Printing Data',
+    name: 'Bookstore',
     featured: false,
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    description: 'Bookstore is an app that allows the user to manage the progress/status of different books. The app allows users to add, delete, edit, and update books. I used React, Redux-toolkit and APIs in this project. When a user fast loads the page, they see the homepage which is shows a list of books managed in the app. A user can add a book using the form at the bottom and post it to an API. The app does two things at this point, it saves this data to an API and also adds the book to the global state maintained through the redux. Updating the redux store updates the app list and displays the added book. A user can then decide to delete a book from history and this initiates two operations. It sends an API call to delete the book and also updates the global redux state to remove the book from the list of maintained books. The greatest challenge that I faced with this app was implementing the completed status feature per book entry. This was a CSS implementation with a little javascript. I would have just added an image to suffice but I wanted it to be able to display the progress on a percentage basis. I solved this challenge by referencing some articles online that gave a step by step guide on how to solve it and effected it in the app. The app was built with the desktop version in view. By completing this project, I learned how to send delete operations to APIs, working with Redux-toolkit and effecting advanced CSS.',
     featuredImage: {
-      link: './images/popupImage.svg',
-      alt: 'Background Image',
+      link: 'images/project-images/Boostore/home.png',
+      alt: 'Landing page',
     },
     images: [
       {
-        src: 'images/popupImage.svg',
-        alt: 'Input text',
+        src: 'images/project-images/Boostore/add.png',
+        alt: 'Add book',
+      },
+      {
+        src: 'images/project-images/Boostore/added.png',
+        alt: 'Added book',
+      },
+      {
+        src: 'images/project-images/Boostore/remove.png',
+        alt: 'Remove book',
       },
     ],
-    technologies: ['html', 'Bootstrap', 'Ruby on rails'],
-    liveLink: '#',
-    sourceLink: '#',
+    technologies: ['React', 'Redux', 'CSS3', 'API'],
+    liveLink: 'https://bookstore-re.netlify.app/',
+    sourceLink: 'https://github.com/microvese-projects/bookstore-cra',
   },
   {
     id: 6,
-    name: 'Professional Art Printing Data',
+    name: 'OOP School Library',
     featured: false,
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    description: 'OOP School Library is a backend project that is object oriented. The app was built in Ruby. The project is terminal based and the only way to run it is to interact with the terminal (Instructions on the live link). The app emulates the backend operations of a School Library with operations such as registering teachers, students, books and creating rentals. All operations require certain data to be fed by the users input on the terminal. The information added as input on the terminal is retrieved, saved in variables and used to create object representing the teachers, students, books or rentals in the library. If a user mistakenly inputs some operations not listed on the options list, the operation is cancelled, the user is notified and the app loads the options again for another attempt. The user has options to list books, list people, add people, add books, create rentals, list rentals specific to an ID and also exit. The exit operation triggers a save operation which ensures the books, people and rentals created by the user are saved in files. If the files do not exist, the app dynamically creates them and saves the files. On load of the app, the app checks for the files, if they are present, the data is loaded from this files and used to populate the specific objects that the user can then use to maintain the library. The main challenge from this app was making the user interface to display the requests that the users need to respond to. It was time consuming at first as on each reload, the data was lost. To solve the problem, I implemented a file saving system that saves the data on exit. This taught me how to create, and read from files in Ruby.',
     featuredImage: {
-      link: './images/popupImage.svg',
-      alt: 'Background Image',
+      link: 'images/project-images/school-lib/landing.png',
+      alt: 'Landing page',
     },
     images: [
       {
-        src: 'images/popupImage.svg',
-        alt: 'Input text',
+        link: 'images/project-images/school-lib/landing.png',
+        alt: 'Landing page',
+      },
+      {
+        src: 'images/project-images/school-lib/list.png',
+        alt: 'List',
+      },
+      {
+        src: 'images/project-images/school-lib/add-person.png',
+        alt: 'Add person',
+      },
+      {
+        src: 'images/project-images/school-lib/add-book.png',
+        alt: 'Add book',
+      },
+      {
+        src: 'images/project-images/school-lib/add-rental.png',
+        alt: 'Create rental',
+      },
+      {
+        src: 'images/project-images/school-lib/show-rentals.png',
+        alt: 'Show rentals of an ID',
       },
     ],
-    technologies: ['html', 'Bootstrap', 'Ruby on rails'],
-    liveLink: '#',
-    sourceLink: '#',
+    technologies: ['Ruby', 'Terminal-based', 'Documentation'],
+    liveLink: 'https://microvese-projects.github.io/OOP_school_library/',
+    sourceLink: 'https://github.com/microvese-projects/OOP_school_library',
   },
   {
     id: 7,
-    name: 'Professional Art Printing Data',
+    name: 'Meals DB',
     featured: false,
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    description: "Capstone Meals DB is an impressive web application developed in a team. It serves as a platform where users can explore a variety of delicious meals and engage with the community through likes and comments. The project utilizes HTML, CSS, and JavaScript on the client side, along with Webpack for bundling and making API calls. The homepage of Capstone Meals DB showcases an enticing display of different meals, each presented as a card. Users can browse through this collection, getting inspired by the culinary delights on offer. Furthermore, they have the ability to express their appreciation for a meal by liking it. This engagement feature allows users to curate their favorites and share their preferences. A particularly interesting aspect of the application is the \"Comments_Popup\" section. Here, users can select a meal card and delve into a step-by-step recipe guide for preparing that particular dish. Alongside the recipe, users can also post comments and share their thoughts or experiences related to the meal. The comments section fosters interaction and creates a sense of community among users, who can learn from each other's experiences and exchange culinary tips. The project's future roadmap includes the addition of exciting features such as an \"Ingredients\" section, which will provide a comprehensive list of ingredients required for each meal. Additionally, a \"Meal_Presentation\" feature is planned to enhance the visual appeal of the meals and make the browsing experience more enjoyable. Moreover, the team intends to implement an \"Edit_Comment\" functionality, allowing users to modify their previously posted comments.",
     featuredImage: {
-      link: './images/popupImage.svg',
-      alt: 'Background Image',
+      link: 'images/project-images/Meals-db/Home.png',
+      alt: 'Landing page',
     },
     images: [
       {
-        src: 'images/popupImage.svg',
-        alt: 'Input text',
+        link: 'images/project-images/Meals-db/Home.png',
+        alt: 'Landing page',
+      },
+      {
+        src: 'images/project-images/Meals-db/description.png',
+        alt: 'Description page',
+      },
+      {
+        src: 'images/project-images/Meals-db/preparations.png',
+        alt: 'Preparation procedure',
+      },
+      {
+        src: 'images/project-images/Meals-db/comments.png',
+        alt: 'Comments',
       },
     ],
-    technologies: ['html', 'Bootstrap', 'Ruby on rails'],
-    liveLink: '#',
-    sourceLink: '#',
+    technologies: ['html', 'JavaScript', 'CSS', 'Webpack', 'API'],
+    liveLink: 'https://microvese-projects.github.io/capstone-meals-DB/dist',
+    sourceLink: 'https://github.com/microvese-projects/capstone-meals-DB',
   },
 ];
 
@@ -205,7 +277,7 @@ function displayCards(obj) {
   projectHeading.className = 'project-card-heading';
   projectHeading.textContent = name;
   descriptionP.className = 'project-card-description';
-  descriptionP.textContent = description.slice(0, 200);
+  descriptionP.textContent = `${description.slice(0, 200)}...`;
   skills.className = 'skills';
   skills.innerHTML = technologies.slice(0, 3).map((tech) => `<li>${tech.split(' ')[0]}</li>`).join('');
   seeProjectBtn.className = 'see-project';
