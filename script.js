@@ -197,7 +197,7 @@ const projects = [
         alt: 'Show rentals of an ID',
       },
     ],
-    technologies: ['Ruby', 'Terminal-based', 'Documentation'],
+    technologies: ['Ruby', 'CLI', 'Documentation'],
     liveLink: 'https://microvese-projects.github.io/OOP_school_library/',
     sourceLink: 'https://github.com/microvese-projects/OOP_school_library',
   },

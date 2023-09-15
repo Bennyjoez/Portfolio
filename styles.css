@@ -200,13 +200,17 @@ body {
 }
 
 .project-card.inactive {
-  box-shadow: 15px 15px 30px #bebebe,
-  -15px -15px 30px #fff5e1;
+  box-shadow:
+    15px 15px 30px #bebebe,
+    -15px -15px 30px #fff5e1;
   border-radius: 10px;
+  transition: all 1s ease-in-out;
 }
 
 .project-card.inactive:hover {
-  box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
 }
 
 .project-card.featured {
@@ -413,7 +417,6 @@ body {
 /* inactive project card */
 .inactive {
   padding-top: 80px;
-
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -794,6 +797,8 @@ textarea {
 
   .inactive .see-project {
     display: none;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
 
   .inactive:hover {
