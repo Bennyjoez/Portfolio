@@ -133,6 +133,10 @@ body {
   animation: hide-title 6s infinite cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
+.typed-cursor {
+  display: none;
+}
+
 @keyframes hide-title {
   0% {
     opacity: 0.1;
