@@ -238,7 +238,7 @@ const hamburgerIcon = document.querySelector('#hamburger-menu');
 const hamburgerContentContainer = document.querySelector('.links');
 const closeHamburgerBtn = document.querySelector('#close-hamburger > i');
 const modal = document.querySelector('#project-details-modal');
-let closeModalBtn;
+let closeModalBtn, prev, next;
 
 function closeMenu() {
   hamburgerContentContainer.classList.remove('hamburger-content');
@@ -321,10 +321,35 @@ function closeModal() {
   modal.style.display = 'none';
 }
 
+let currentImageIndex = 0; // Initialize currentImageIndex
+function navImages(direction) {
+  console.log(currentImageIndex);
+  const images = document.querySelectorAll('.popup-images');
+  if (currentImageIndex >= images.length) {
+    currentImageIndex = 0;
+  }
+  // Hide the current image
+  if (currentImageIndex > 0) {
+    images[currentImageIndex - 1].style.display = 'none';
+  }
+
+  // Update the current index based on the direction
+  if (direction === 'prev') {
+    currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+  } else if (direction === 'next') {
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+  }
+
+  // Show the new current image
+  images[currentImageIndex].style.display = 'block';
+}
+
+
 function showProjectDetails(obj) {
   const {
     name, images, description, technologies, liveLink, sourceLink,
   } = obj;
+  currentImageIndex = 0;
   modal.style.display = 'block';
   modal.innerHTML = `
     <div id="popup-details-card">
@@ -339,7 +364,21 @@ function showProjectDetails(obj) {
       </div>
       <div id="popup-flex-container">
         <div id="images-container">
-          ${images.map(({ src, alt }) => `<img src=${src} alt=${alt} class="popup-images"></img>`)}
+          <figure class='images'>
+            ${images.map(({ src, alt }) => `<img src="${src}" alt="${alt}" class="popup-images" />`).join('')}
+          </figure>
+          <div>
+            <span class="arrow left">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 9l-3 3m0 0l3 3m-3-3h7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </span>
+            <span class="arrow right">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </span>
+          </div>
         </div>
         <div id="popup-details">
           <p id="popup-description">
@@ -364,7 +403,12 @@ function showProjectDetails(obj) {
     </div>
     `;
   closeModalBtn = document.querySelector('#close');
+  prev = document.querySelector('.left')
+  next = document.querySelector('.right')
   closeModalBtn.addEventListener('click', closeModal);
+  prev.addEventListener('click', () => navImages('prev'))
+  next.addEventListener('click', () => navImages('next'))
+  navImages('next')
 }
 
 function callDetails(targetId) {
@@ -384,7 +428,7 @@ function listen(btn) {
 
 seeProjectBtns.forEach(listen);
 
-var typed = new Typed('#title-typed', {
+const typed = new Typed('#title-typed', {
   strings: ["I'm a Full-stack Software Developer"],
   typeSpeed: 50,
   loop: false
