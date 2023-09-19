@@ -274,6 +274,7 @@ function displayCards(obj) {
   anchor.setAttribute('href', '#popup-details-card');
   anchor.className = 'see-project-anchor';
   card.className = 'project-card';
+  card.classList.add('hide')
   projectHeading.className = 'project-card-heading';
   projectHeading.textContent = name;
   descriptionP.className = 'project-card-description';
@@ -384,7 +385,7 @@ function listen(btn) {
 seeProjectBtns.forEach(listen);
 
 var typed = new Typed('#title-typed', {
-  strings: ["I'am a Full-stack Software Developer"],
+  strings: ["I'm a Full-stack Software Developer"],
   typeSpeed: 50,
   loop: false
 });

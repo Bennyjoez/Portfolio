@@ -129,7 +129,8 @@ body {
   line-height: 32px;
   display: flex;
   align-items: center;
-  color: #fff5e1;
+  /* color: #fff5e1; */
+  color: chartreuse;
   animation: hide-title 6s infinite cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
@@ -644,6 +645,25 @@ textarea {
   color: #c30;
 }
 
+.hide {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+  .hide {
+    transition: none;
+  }
+}
+
 /* big screen css */
 @media only screen and (min-width: 400px) and (max-width: 772px) {
   .about-me-intro {
@@ -738,7 +758,6 @@ textarea {
     font-size: 32px;
     line-height: 138%;
     align-items: center;
-    color: #fff;
     margin-block: 24px;
   }
 
@@ -889,6 +908,16 @@ textarea {
 
   #contact-btn {
     margin: 0;
+  }
+
+  .inactive:nth-child(2),
+  .inactive:nth-child(5) {
+    transition-delay: 200ms;
+  }
+
+  .inactive:nth-child(3),
+  .inactive:nth-child(6) {
+    transition-delay: 400ms;
   }
 }
 
