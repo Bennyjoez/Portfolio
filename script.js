@@ -26,7 +26,7 @@ const projects = [
         alt: 'Edit and delete task',
       },
     ],
-    technologies: ['html', 'css', 'javascript'],
+    technologies: ['HTML5', 'CSS3', 'JavaScript'],
     liveLink: 'https://microvese-projects.github.io/ToDoList/',
     sourceLink: 'https://github.com/microvese-projects/ToDoList.git',
   },
@@ -61,7 +61,7 @@ const projects = [
         alt: 'Refresh button',
       },
     ],
-    technologies: ['html & css', 'Javascript', 'webpack', 'API'],
+    technologies: ['HTML5', 'CSS3', 'JavaScript', 'Webpack', 'API'],
     liveLink: 'https://microvese-projects.github.io/leaderBoard/dist/',
     sourceLink: 'https://github.com/microvese-projects/leaderBoard',
   },
@@ -111,7 +111,7 @@ const projects = [
     },
     images: [
       {
-        link: '/images/project-images/crypto-metrics/home.png',
+        src: '/images/project-images/crypto-metrics/home.png',
         alt: 'Landing',
       },
       {
@@ -173,7 +173,7 @@ const projects = [
     },
     images: [
       {
-        link: 'images/project-images/school-lib/landing.png',
+        src: 'images/project-images/school-lib/landing.png',
         alt: 'Landing page',
       },
       {
@@ -212,7 +212,7 @@ const projects = [
     },
     images: [
       {
-        link: 'images/project-images/Meals-db/Home.png',
+        src: 'images/project-images/Meals-db/Home.png',
         alt: 'Landing page',
       },
       {
@@ -228,7 +228,7 @@ const projects = [
         alt: 'Comments',
       },
     ],
-    technologies: ['html', 'JavaScript', 'CSS', 'Webpack', 'API'],
+    technologies: ['HTML5', 'JavaScript', 'CSS3', 'Webpack', 'API'],
     liveLink: 'https://microvese-projects.github.io/capstone-meals-DB/dist',
     sourceLink: 'https://github.com/microvese-projects/capstone-meals-DB',
   },
@@ -324,13 +324,8 @@ function closeModal() {
 let currentImageIndex = 0; // Initialize currentImageIndex
 function navImages(direction) {
   const images = document.querySelectorAll('.popup-images');
-  if (currentImageIndex >= images.length) {
-    currentImageIndex = 0;
-  }
   // Hide the current image
-  if (currentImageIndex > 0) {
-    images[currentImageIndex - 1].style.display = 'none';
-  }
+  images[currentImageIndex].style.display = 'none';
 
   // Update the current index based on the direction
   if (direction === 'prev') {
