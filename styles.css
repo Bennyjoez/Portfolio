@@ -17,7 +17,7 @@ body {
   padding: 2px 24px;
   position: fixed;
   z-index: 14;
-  width: 100%;
+  min-width: 100%;
 }
 
 .navbar ul {
@@ -129,8 +129,14 @@ body {
   line-height: 32px;
   display: flex;
   align-items: center;
-  color: #fff5e1;
+
+  /* color: #fff5e1; */
+  color: chartreuse;
   animation: hide-title 6s infinite cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.typed-cursor {
+  display: none;
 }
 
 @keyframes hide-title {
@@ -200,13 +206,17 @@ body {
 }
 
 .project-card.inactive {
-  box-shadow: 15px 15px 30px #bebebe,
-  -15px -15px 30px #fff5e1;
+  box-shadow:
+    15px 15px 30px #bebebe,
+    -15px -15px 30px #fff5e1;
   border-radius: 10px;
+  transition: all 1s ease-in-out;
 }
 
 .project-card.inactive:hover {
-  box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
 }
 
 .project-card.featured {
@@ -347,10 +357,13 @@ body {
 }
 
 #images-container {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
   width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.images {
+  display: flex;
 }
 
 .popup-images {
@@ -358,6 +371,32 @@ body {
   max-width: 100%;
   aspect-ratio: 16/10;
   scroll-snap-align: start;
+}
+
+.arrow {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  color: orange;
+  background-color: #091e42;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+.arrow:hover {
+  color: orangered;
+  background-color: #172b4d;
+  opacity: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
 }
 
 #popup-description {
@@ -413,7 +452,6 @@ body {
 /* inactive project card */
 .inactive {
   padding-top: 80px;
-
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -637,6 +675,12 @@ textarea {
   color: #c30;
 }
 
+@media (prefers-reduced-motion) {
+  .hide {
+    transition: none;
+  }
+}
+
 /* big screen css */
 @media only screen and (min-width: 400px) and (max-width: 772px) {
   .about-me-intro {
@@ -731,7 +775,6 @@ textarea {
     font-size: 32px;
     line-height: 138%;
     align-items: center;
-    color: #fff;
     margin-block: 24px;
   }
 
@@ -756,7 +799,7 @@ textarea {
     content: '';
     position: absolute;
     border-bottom: 1px solid #212121;
-    width: 50vw;
+    width: 45vw;
     max-width: 794px;
     top: 50%;
     left: 105%;
@@ -794,6 +837,8 @@ textarea {
 
   .inactive .see-project {
     display: none;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
 
   .inactive:hover {
@@ -880,6 +925,29 @@ textarea {
 
   #contact-btn {
     margin: 0;
+  }
+
+  .hide {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+  }
+
+  .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+
+  .inactive:nth-child(2),
+  .inactive:nth-child(5) {
+    transition-delay: 200ms;
+  }
+
+  .inactive:nth-child(3),
+  .inactive:nth-child(6) {
+    transition-delay: 400ms;
   }
 }
 
@@ -980,7 +1048,7 @@ textarea {
     flex: 1;
   }
 
-  #images-container * {
+  #images-container img {
     max-width: none;
     width: 100%;
   }
