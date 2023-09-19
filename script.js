@@ -1,3 +1,4 @@
+/* eslint no-new-wrappers: "error" */
 const projects = [
   {
     id: 1,
@@ -238,7 +239,9 @@ const hamburgerIcon = document.querySelector('#hamburger-menu');
 const hamburgerContentContainer = document.querySelector('.links');
 const closeHamburgerBtn = document.querySelector('#close-hamburger > i');
 const modal = document.querySelector('#project-details-modal');
-let closeModalBtn, prev, next;
+let closeModalBtn;
+let prev;
+let next;
 
 function closeMenu() {
   hamburgerContentContainer.classList.remove('hamburger-content');
@@ -274,7 +277,7 @@ function displayCards(obj) {
   anchor.setAttribute('href', '#popup-details-card');
   anchor.className = 'see-project-anchor';
   card.className = 'project-card';
-  card.classList.add('hide')
+  card.classList.add('hide');
   projectHeading.className = 'project-card-heading';
   projectHeading.textContent = name;
   descriptionP.className = 'project-card-description';
@@ -338,7 +341,6 @@ function navImages(direction) {
   images[currentImageIndex].style.display = 'block';
 }
 
-
 function showProjectDetails(obj) {
   const {
     name, images, description, technologies, liveLink, sourceLink,
@@ -376,8 +378,9 @@ function showProjectDetails(obj) {
         </div>
         <div id="popup-details">
           <div id="popup-description">
-            ${description.split('\n').map((each) =>` <p>${each}</p><br />`).join('')}
+            ${description.split('\n').map((each) => ` <p>${each}</p><br />`).join('')}
           </div>
+
           <ul id="links">
             <li class="links-li">
               <a href=${liveLink}>
@@ -397,12 +400,12 @@ function showProjectDetails(obj) {
     </div>
     `;
   closeModalBtn = document.querySelector('#close');
-  prev = document.querySelector('.left')
-  next = document.querySelector('.right')
+  prev = document.querySelector('.left');
+  next = document.querySelector('.right');
   closeModalBtn.addEventListener('click', closeModal);
-  prev.addEventListener('click', () => navImages('prev'))
-  next.addEventListener('click', () => navImages('next'))
-  navImages('next')
+  prev.addEventListener('click', () => navImages('prev'));
+  next.addEventListener('click', () => navImages('next'));
+  navImages('next');
 }
 
 function callDetails(targetId) {
@@ -422,8 +425,10 @@ function listen(btn) {
 
 seeProjectBtns.forEach(listen);
 
-const typed = new Typed('#title-typed', {
+/* eslint-disable */
+new Typed('#title-typed', {
   strings: ["I'm a Full-stack Software Developer"],
   typeSpeed: 50,
-  loop: false
+  loop: false,
 });
+ /* eslint-enable */
