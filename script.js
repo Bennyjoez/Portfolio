@@ -385,7 +385,6 @@ seeProjectBtns.forEach(listen);
 
 var typed = new Typed('#title-typed', {
   strings: ["I'am a Full-stack Software Developer"],
-  typeSpeed: 100,
-  backSpeed: 100,
+  typeSpeed: 50,
   loop: false
 });
