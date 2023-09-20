@@ -507,8 +507,8 @@ body {
   gap: 24px;
   background-image: url('./images/about-me.svg');
   background-repeat: no-repeat;
-  background-size: 350px 310px;
-  background-position: 260px 215px;
+  background-size: 405px 310px;
+  background-position: 310px 215px;
 }
 
 #about-me-title {
@@ -685,7 +685,7 @@ textarea {
 @media only screen and (min-width: 400px) and (max-width: 772px) {
   .about-me-intro {
     background-size: 500px 450px;
-    background-position: 75vw 40px;
+    background-position: 75vw 312px;
   }
 }
 
@@ -972,7 +972,7 @@ textarea {
   }
 
   #about-me {
-    background-position: 70vw 25%;
+    background-position: 78vw 25%;
   }
 }
 
