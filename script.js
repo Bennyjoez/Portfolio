@@ -383,13 +383,13 @@ function showProjectDetails(obj) {
 
           <ul id="links">
             <li class="links-li">
-              <a href=${liveLink}>
+              <a target="_blank" href=${liveLink}>
                 See Live
                 <img src="./images/Icon-see live.svg" alt="see live icon">
               </a>
             </li>
             <li class="links-li">
-              <a href=${sourceLink}>
+              <a target="_blank" href=${sourceLink}>
                 See Source
                 <img src="./images/githubPopup.svg" alt="github">
               </a>
