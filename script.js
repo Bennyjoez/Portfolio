@@ -158,6 +158,14 @@ const projects = [
         src: 'images/project-images/Boostore/remove.png',
         alt: 'Remove book',
       },
+      {
+        src: 'images/project-images/Boostore/categories.png',
+        alt: 'Book Categories',
+      },
+      {
+        src: 'images/project-images/Boostore/profile.png',
+        alt: 'Contact',
+      },
     ],
     technologies: ['React', 'Redux', 'CSS3', 'API'],
     liveLink: 'https://bookstore-re.netlify.app/',
