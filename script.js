@@ -3,7 +3,7 @@ const projects = [
   {
     id: 1,
     name: 'To Do List App',
-    featured: true,
+    featured: false,
     description: "Allow me to introduce my To-Do List app, a personal project crafted with dedication and passion. This user-friendly tool simplifies daily task management, offering features like task addition, editing, and removal, alongside the ability to mark tasks as complete.\nFor a touch of whimsy, I've added a delightful rotating reset button that reflects my personal touch. Developed single-handedly using HTML, CSS, and JavaScript, this project represents my commitment to creating a seamless task management experience. Excitingly, I have plans to introduce a new section that will list all your completed tasks in the near future. Stay tuned for updates!",
     featuredImage: {
       link: 'images/project-images/todolist/todolist1.png',
@@ -30,6 +30,61 @@ const projects = [
     technologies: ['HTML5', 'CSS3', 'JavaScript'],
     liveLink: 'https://microvese-projects.github.io/ToDoList/',
     sourceLink: 'https://github.com/microvese-projects/ToDoList.git',
+  },
+  {
+    id: 3,
+    name: 'Motorcycle Appointment',
+    featured: true,
+    description: 'This app combines the power of Ruby on Rails 🚀 for the backend and React ⚛️ for the frontend, seamlessly connected through robust API endpoints 🌐. React Redux 🔄 efficiently manages global state, while agile methodologies 🏃 ensure flexibility and responsiveness throughout development. 💪',
+    featuredImage: {
+      link: 'images/project-images/motorcycle/home.png',
+      alt: 'Home page',
+    },
+    images: [
+      {
+        src: 'images/project-images/motorcycle/home.png',
+        alt: 'Motorcycles Page',
+      },
+      {
+        src: 'images/project-images/motorcycle/responsive1.png',
+        alt: 'Motorcycles Page',
+      },
+      {
+        src: 'images/project-images/motorcycle/responsive2.png',
+        alt: 'Motorcycles Page',
+      },
+      {
+        src: 'images/project-images/motorcycle/details.png',
+        alt: 'Details',
+      },
+      {
+        src: 'images/project-images/motorcycle/hireform.png',
+        alt: 'Reserve Form',
+      },
+      {
+        src: 'images/project-images/motorcycle/reservations.png',
+        alt: 'Reservations',
+      },
+      {
+        src: 'images/project-images/motorcycle/delete.png',
+        alt: 'Delete page',
+      },
+      {
+        src: 'images/project-images/motorcycle/add-motorcycle.png',
+        alt: 'Add motorcycle',
+      },
+      {
+        src: 'images/project-images/motorcycle/register.png',
+        alt: 'Register page',
+      },
+      {
+        src: 'images/project-images/motorcycle/login.png',
+        alt: 'Login page',
+      },
+    ],
+    technologies: ['Ruby on Rails', 'PostgreSQL', 'React', 'CSS3'],
+    liveLink: 'https://motorcycle-appointment.netlify.app/',
+    sourceLink: 'https://github.com/Bennyjoez/motorcycle-appointment-app-front-end',
   },
   {
     id: 2,
@@ -65,41 +120,6 @@ const projects = [
     technologies: ['HTML5', 'CSS3', 'JavaScript', 'Webpack', 'API'],
     liveLink: 'https://microvese-projects.github.io/leaderBoard/dist/',
     sourceLink: 'https://github.com/microvese-projects/leaderBoard',
-  },
-  {
-    id: 3,
-    name: 'Vet Clinic',
-    featured: false,
-    description: 'Vet Clinic 🐾 – your comprehensive veterinary database. Organize animal, owner, vet, visit, species, and specialization data seamlessly. Our PostgreSQL-based system creates strong relationships across tables. Challenges included mastering PostgreSQL syntax and collaborative documentation. Experience the power of data-driven pet care! 🏥🐕📊',
-    featuredImage: {
-      link: 'images/project-images/Vet-clinic/ER.png',
-      alt: 'Entity Relationship Diagram',
-    },
-    images: [
-      {
-        src: 'images/project-images/Vet-clinic/ER.png',
-        alt: 'ERD',
-      },
-      {
-        src: 'images/project-images/Vet-clinic/animals.png',
-        alt: 'Animals Table',
-      },
-      {
-        src: 'images/project-images/Vet-clinic/query1.png',
-        alt: 'Queries',
-      },
-      {
-        src: 'images/project-images/Vet-clinic/query2.png',
-        alt: 'Queries',
-      },
-      {
-        src: 'images/project-images/Vet-clinic/query3.png',
-        alt: 'Queries',
-      },
-    ],
-    technologies: ['PostgreSQL', 'Git', 'Github', 'CL'],
-    liveLink: 'https://microvese-projects.github.io/vet-clinic/',
-    sourceLink: 'https://github.com/microvese-projects/vet-clinic',
   },
   {
     id: 4,
@@ -170,45 +190,6 @@ const projects = [
     technologies: ['React', 'Redux', 'CSS3', 'API'],
     liveLink: 'https://bookstore-re.netlify.app/',
     sourceLink: 'https://github.com/microvese-projects/bookstore-cra',
-  },
-  {
-    id: 6,
-    name: 'OOP School Library',
-    featured: false,
-    description: 'Welcome to OOP School Library 📚 – where your school library comes alive with Ruby magic! This terminal-based app lets you effortlessly register teachers, students, books, and create rentals. Interact through simple terminal commands (see live link for instructions). Stray from the options list? No worries, the app gracefully cancels, notifies, and reloads for another try.\nYou can list books, manage people, create rentals, explore rentals by ID, and smoothly exit. Exiting ensures your library data is safely saved in files – it creates them as needed. Upon reload, your data is seamlessly loaded, making library management a breeze! 📖🔮🎓',
-    featuredImage: {
-      link: 'images/project-images/school-lib/landing.png',
-      alt: 'Landing page',
-    },
-    images: [
-      {
-        src: 'images/project-images/school-lib/landing.png',
-        alt: 'Landing page',
-      },
-      {
-        src: 'images/project-images/school-lib/list.png',
-        alt: 'List',
-      },
-      {
-        src: 'images/project-images/school-lib/add-person.png',
-        alt: 'Add person',
-      },
-      {
-        src: 'images/project-images/school-lib/add-book.png',
-        alt: 'Add book',
-      },
-      {
-        src: 'images/project-images/school-lib/add-rental.png',
-        alt: 'Create rental',
-      },
-      {
-        src: 'images/project-images/school-lib/show-rentals.png',
-        alt: 'Show rentals of an ID',
-      },
-    ],
-    technologies: ['Ruby', 'CLI', 'Documentation'],
-    liveLink: 'https://microvese-projects.github.io/OOP_school_library/',
-    sourceLink: 'https://github.com/microvese-projects/OOP_school_library',
   },
   {
     id: 7,
