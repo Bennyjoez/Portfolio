@@ -691,6 +691,10 @@ textarea {
   color: #c30;
 }
 
+.sk-tab-active {
+  display: none;
+}
+
 @media (prefers-reduced-motion) {
   .hide {
     transition: none;
