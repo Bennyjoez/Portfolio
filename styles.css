@@ -127,6 +127,20 @@ body {
   background-position: 63vw bottom;
 }
 
+#headline #profile {
+  margin: 0 auto;
+}
+
+#headline #profile img {
+  height: 200px;
+  -webkit-mask-image: url('./images/blob.svg');
+  -webkit-mask-size: cover;
+  -webkit-mask-position: center;
+  mask-size: cover;
+  mask-image: url('./images/blob.svg');
+  mask-repeat: no-repeat;
+}
+
 .greeting {
   color: #ff6b00;
   font-family: 'Crete Round', sans-serif;
@@ -987,6 +1001,13 @@ textarea {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 999px) {
+  #headline #profile img {
+    height: 200px;
+    position: absolute;
+    top: 120px;
+    right: 10px;
+  }
+
   .project-card:not(.inactive) {
     max-width: 70vw;
   }
@@ -997,6 +1018,10 @@ textarea {
 }
 
 @media only screen and (min-width: 1000px) {
+  #headline #profile img {
+    height: 300px;
+  }
+
   /* project details popup desktop start */
   #project-details-modal {
     padding-inline: 120px;
@@ -1054,6 +1079,10 @@ textarea {
 }
 
 @media only screen and (min-width: 1200px) {
+  #headline #profile img {
+    height: 500px;
+  }
+
   #popup-details-card {
     margin-inline: auto;
     max-width: 2000px;
