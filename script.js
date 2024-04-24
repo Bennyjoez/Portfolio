@@ -193,9 +193,9 @@ const projects = [
   },
   {
     id: 7,
-    name: 'Meals DB',
+    name: 'All You Can Eat',
     featured: false,
-    description: "Capstone Meals DB 🍲 – savor and share culinary wonders! This collaborative web app lets you explore a feast of meals, express likes, and spark conversations. Built with HTML, CSS, JavaScript, and Webpack, it's a flavorful experience. Stay tuned for upcoming features like 'Ingredients' and 'Meal_Presentation.' Join the culinary journey! 🍽️👩‍🍳👨‍🍳",
+    description: "All You Can Eat 🍲 – savor and share culinary wonders! This collaborative web app lets you explore a feast of meals, express likes, and spark conversations. Built with HTML, CSS, JavaScript, and Webpack, it's a flavorful experience. Stay tuned for upcoming features like 'Ingredients' and 'Meal_Presentation.' Join the culinary journey! 🍽️👩‍🍳👨‍🍳",
     featuredImage: {
       link: 'images/project-images/Meals-db/Home.png',
       alt: 'Landing page',
