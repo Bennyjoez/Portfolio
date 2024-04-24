@@ -34,7 +34,7 @@ const projects = [
   {
     id: 3,
     name: 'Motorcycle Appointment',
-    featured: true,
+    featured: false,
     description: 'This app combines the power of Ruby on Rails 🚀 for the backend and React ⚛️ for the frontend, seamlessly connected through robust API endpoints 🌐. React Redux 🔄 efficiently manages global state, while agile methodologies 🏃 ensure flexibility and responsiveness throughout development. 💪',
     featuredImage: {
       link: 'images/project-images/motorcycle/home.png',
@@ -88,38 +88,42 @@ const projects = [
   },
   {
     id: 2,
-    name: 'Leaderboard',
-    featured: false,
-    description: "Leaderboard 🏆 - your ultimate game scoring companion! Whether it's pool, scrabble, or chess, this app lets you track scores effortlessly. It consumes a REST API using async/await functions, and the sleek design is powered by JavaScript, HTML, CSS, and webpack. Challenges were conquered, like handling game IDs and preventing data loss on reload. Level up your gaming experience! 🎮🏆🚀",
+    name: 'Joez Photozz',
+    featured: true,
+    description: "Joez Photozz 📷 - Your photographer of choice. Get your photos taken professionally to create some lovely memories for you and your loved ones. 'Anywhere, everywhere, We are there'",
     featuredImage: {
-      link: 'images/project-images/learderboard/leaderboard1.png',
-      alt: 'Leaderboard',
+      link: 'images/project-images/joez_photozz/1.png',
+      alt: 'Joez Photozz',
     },
     images: [
       {
-        src: 'images/project-images/learderboard/leaderboard1.png',
+        src: 'images/project-images/joez_photozz/1.png',
         alt: 'Landing page',
       },
       {
-        src: 'images/project-images/learderboard/leaderboard2.png',
-        alt: 'Adding score',
+        src: 'images/project-images/joez_photozz/2.png',
+        alt: 'Services',
       },
       {
-        src: 'images/project-images/learderboard/leaderboard3.png',
-        alt: 'Posted score',
+        src: 'images/project-images/joez_photozz/3.png',
+        alt: 'About Section',
       },
       {
-        src: 'images/project-images/learderboard/leaderboard4.png',
-        alt: 'Success message',
+        src: 'images/project-images/joez_photozz/4.png',
+        alt: 'Photo Gallery',
       },
       {
-        src: 'images/project-images/learderboard/leaderboard5.png',
-        alt: 'Refresh button',
+        src: 'images/project-images/joez_photozz/5.png',
+        alt: 'Reviews',
+      },
+      {
+        src: 'images/project-images/joez_photozz/6.png',
+        alt: 'Contact Us Section',
       },
     ],
-    technologies: ['HTML5', 'CSS3', 'JavaScript', 'Webpack', 'API'],
-    liveLink: 'https://microvese-projects.github.io/leaderBoard/dist/',
-    sourceLink: 'https://github.com/microvese-projects/leaderBoard',
+    technologies: ['NodeJS', 'TypeScript', 'React', 'CSS3', 'Redux', 'React Query'],
+    liveLink: '/',
+    sourceLink: 'https://github.com/Bennyjoez/joezz_photozz',
   },
   {
     id: 4,
