@@ -120,6 +120,22 @@ const projects = [
         src: 'images/project-images/joez_photozz/6.png',
         alt: 'Contact Us Section',
       },
+      {
+        src: 'images/project-images/joez_photozz/7.png',
+        alt: 'Login',
+      },
+      {
+        src: 'images/project-images/joez_photozz/8.png',
+        alt: 'Register',
+      },
+      {
+        src: 'images/project-images/joez_photozz/9.png',
+        alt: 'Booking Popup',
+      },
+      {
+        src: 'images/project-images/joez_photozz/10.png',
+        alt: 'Reviews Popup',
+      },
     ],
     technologies: ['NodeJS', 'TypeScript', 'React', 'CSS3', 'Redux', 'React Query'],
     liveLink: '/',
