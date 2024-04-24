@@ -162,28 +162,28 @@ const projects = [
     featured: false,
     description: 'Introducing Bookstore 📚 – your book management companion! With React, Redux-toolkit, and APIs, you can effortlessly add, edit, delete, and update your book collection.\nAdding a book updates both the API and your global Redux state, ensuring seamless synchronization. Deleting a book is a breeze, thanks to API calls and Redux state management.\nOur biggest challenge? Creating a completion status feature with dynamic progress display. Online guides and CSS magic made it possible.\nBuilt with desktop in mind, Bookstore taught us API delete operations, Redux-toolkit, and advanced CSS. Dive into your reading journey! 📖',
     featuredImage: {
-      link: 'images/project-images/Boostore/home.png',
+      link: 'images/project-images/Bookstore/home.png',
       alt: 'Landing page',
     },
     images: [
       {
-        src: 'images/project-images/Boostore/add.png',
+        src: 'images/project-images/Bookstore/add.png',
         alt: 'Add book',
       },
       {
-        src: 'images/project-images/Boostore/added.png',
+        src: 'images/project-images/Bookstore/added.png',
         alt: 'Added book',
       },
       {
-        src: 'images/project-images/Boostore/remove.png',
+        src: 'images/project-images/Bookstore/remove.png',
         alt: 'Remove book',
       },
       {
-        src: 'images/project-images/Boostore/categories.png',
+        src: 'images/project-images/Bookstore/categories.png',
         alt: 'Book Categories',
       },
       {
-        src: 'images/project-images/Boostore/profile.png',
+        src: 'images/project-images/Bookstore/profile.png',
         alt: 'Contact',
       },
     ],
