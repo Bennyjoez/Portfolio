@@ -1,12 +1,19 @@
-const cards = document.querySelectorAll('.project-card');
+let cards;
+let navbar;
 
-const options = {
+const cardsOptions = {
   root: null,
   threshold: 0,
   rootMargin: '-50px',
 };
 
-const observer = new IntersectionObserver(((entries) => {
+const navbarOptions = {
+  root: null,
+  threshold: 0.1,
+  rootMargin: '50px',
+};
+
+function animateCard(entries) {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add('show');
@@ -14,8 +21,28 @@ const observer = new IntersectionObserver(((entries) => {
       entry.target.classList.remove('show');
     }
   });
-}), options);
+}
 
-cards.forEach((card) => {
-  observer.observe(card);
-});
+function toggleNavBackground(entries) {
+
+  console.log("called", entries, navbar)
+  if (entries[0].isIntersecting === true) {
+    navbar.style.backgroundColor = "rgba(28, 26, 25, 0.5)";
+  } else {
+    navbar.style.backgroundColor = "transparent";
+  }
+}
+
+const observeCards = new IntersectionObserver(animateCard, cardsOptions);
+const toggleNavbar = new IntersectionObserver(toggleNavBackground, navbarOptions);
+
+window.addEventListener("load", () => {
+  cards = document.querySelectorAll('.project-card');
+  navbar = document.querySelector('.navbar');
+
+  cards.forEach((card) => {
+    observeCards.observe(card);
+  });
+
+  toggleNavbar.observe(document.querySelector('#projects'));
+}, false);
