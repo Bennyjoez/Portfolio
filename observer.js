@@ -10,7 +10,7 @@ const cardsOptions = {
 const navbarOptions = {
   root: null,
   threshold: 0.1,
-  rootMargin: '50px',
+  rootMargin: '600px',
 };
 
 function animateCard(entries) {
@@ -27,9 +27,9 @@ function toggleNavBackground(entries) {
 
   console.log("called", entries, navbar)
   if (entries[0].isIntersecting === true) {
-    navbar.style.backgroundColor = "rgba(28, 26, 25, 0.5)";
+    navbar.classList.add("scrolled");
   } else {
-    navbar.style.backgroundColor = "transparent";
+    navbar.classList.remove("scrolled");
   }
 }
 

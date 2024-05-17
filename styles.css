@@ -14,7 +14,6 @@ body {
 }
 
 .navbar {
-  background: #3c3a39;
   padding: 2px 24px;
   position: fixed;
   z-index: 14;
@@ -43,6 +42,10 @@ body {
 
 .navbar ul .nav-item {
   padding: 10px 12px;
+}
+
+.scrolled {
+  background-color: rgba(28, 26, 25, 0.5);
 }
 
 .links {
