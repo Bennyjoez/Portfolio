@@ -210,6 +210,16 @@ body {
   align-items: center;
 }
 
+.socials > li {
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+
+  &:hover {
+    filter: invert(0.5) sepia(1) saturate(0) hue-rotate(0deg) brightness(0.7);
+  }
+}
+
 /* projects */
 .projects-title {
   width: 320px;
