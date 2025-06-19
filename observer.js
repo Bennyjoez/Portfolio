@@ -24,19 +24,17 @@ function animateCard(entries) {
 }
 
 function toggleNavBackground(entries) {
-
-  console.log("called", entries, navbar)
   if (entries[0].isIntersecting === true) {
-    navbar.classList.add("scrolled");
+    navbar.classList.add('scrolled');
   } else {
-    navbar.classList.remove("scrolled");
+    navbar.classList.remove('scrolled');
   }
 }
 
 const observeCards = new IntersectionObserver(animateCard, cardsOptions);
 const toggleNavbar = new IntersectionObserver(toggleNavBackground, navbarOptions);
 
-window.addEventListener("load", () => {
+window.addEventListener('load', () => {
   cards = document.querySelectorAll('.project-card');
   navbar = document.querySelector('.navbar');
 
